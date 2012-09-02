@@ -1,2 +1,5 @@
 MoMoWeb
 =======
+*.suo
+bin
+debug
