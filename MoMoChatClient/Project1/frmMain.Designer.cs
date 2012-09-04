@@ -37,7 +37,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lstChatters);
-            this.groupBox1.Location = new System.Drawing.Point(62, 103);
+            this.groupBox1.Location = new System.Drawing.Point(34, 55);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(544, 276);
             this.groupBox1.TabIndex = 0;
@@ -56,17 +56,16 @@
             // lblcurrPerson
             // 
             this.lblcurrPerson.AutoSize = true;
-            this.lblcurrPerson.Location = new System.Drawing.Point(94, 42);
+            this.lblcurrPerson.Location = new System.Drawing.Point(60, 22);
             this.lblcurrPerson.Name = "lblcurrPerson";
-            this.lblcurrPerson.Size = new System.Drawing.Size(41, 12);
+            this.lblcurrPerson.Size = new System.Drawing.Size(0, 12);
             this.lblcurrPerson.TabIndex = 1;
-            this.lblcurrPerson.Text = "label1";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 482);
+            this.ClientSize = new System.Drawing.Size(619, 369);
             this.Controls.Add(this.lblcurrPerson);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMain";
