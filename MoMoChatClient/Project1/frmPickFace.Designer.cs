@@ -58,6 +58,7 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.lstFaces);
             this.Name = "frmPickFace";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPickFace";
             this.ResumeLayout(false);
 

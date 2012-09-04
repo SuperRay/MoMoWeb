@@ -37,15 +37,18 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pbFace = new System.Windows.Forms.PictureBox();
             this.btnChoose = new System.Windows.Forms.Button();
+            this.pbBigFace = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBigFace)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pbBigFace);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -133,6 +136,16 @@
             this.btnChoose.UseVisualStyleBackColor = true;
             this.btnChoose.Click += new System.EventHandler(this.btnChoose_Click);
             // 
+            // pbBigFace
+            // 
+            this.pbBigFace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbBigFace.Location = new System.Drawing.Point(24, 47);
+            this.pbBigFace.Name = "pbBigFace";
+            this.pbBigFace.Size = new System.Drawing.Size(107, 146);
+            this.pbBigFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbBigFace.TabIndex = 2;
+            this.pbBigFace.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -140,6 +153,7 @@
             this.ClientSize = new System.Drawing.Size(408, 267);
             this.Controls.Add(this.panel1);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -147,6 +161,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbFace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBigFace)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -162,5 +177,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pbFace;
         private System.Windows.Forms.Button btnChoose;
+        private System.Windows.Forms.PictureBox pbBigFace;
     }
 }

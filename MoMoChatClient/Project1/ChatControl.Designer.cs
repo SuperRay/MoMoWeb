@@ -117,6 +117,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rtxtRecord);
             this.Name = "ChatControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ChatControl";
             this.ResumeLayout(false);
             this.PerformLayout();

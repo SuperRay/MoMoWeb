@@ -56,6 +56,7 @@ namespace MoMoChatClient
             if (pickface.Visible == false)
             {
                 this.pbFace.Image = Image.FromFile(pickface.ImageUrl);
+                this.pbBigFace.Image = Image.FromFile(pickface.ImageUrl);
             }
         }
     }
