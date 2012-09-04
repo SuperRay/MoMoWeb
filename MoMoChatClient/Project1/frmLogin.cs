@@ -19,11 +19,12 @@ namespace MoMoChatClient
         public frmLogin()
         {
             InitializeComponent();
+            pickface.VisibleChanged += new EventHandler(ShowFace);
         }
 
         private void btnChoose_Click(object sender, EventArgs e)
-        {
-            pickface.Show();
+        {            
+            pickface.Show();            
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -46,7 +47,7 @@ namespace MoMoChatClient
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         // 当关闭选择图像的窗体时，在Login窗体中加载所选择的图片

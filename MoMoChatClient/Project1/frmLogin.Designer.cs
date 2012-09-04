@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnChoose = new System.Windows.Forms.Button();
-            this.pbFace = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tbName = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pbFace = new System.Windows.Forms.PictureBox();
+            this.btnChoose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFace)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFace)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -53,17 +53,6 @@
             this.panel1.Size = new System.Drawing.Size(408, 267);
             this.panel1.TabIndex = 0;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.pbFace);
-            this.groupBox1.Controls.Add(this.btnChoose);
-            this.groupBox1.Location = new System.Drawing.Point(12, 17);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Choose a face:";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.groupBox2);
@@ -72,24 +61,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(225, 243);
             this.panel2.TabIndex = 1;
-            // 
-            // btnChoose
-            // 
-            this.btnChoose.Location = new System.Drawing.Point(109, 45);
-            this.btnChoose.Name = "btnChoose";
-            this.btnChoose.Size = new System.Drawing.Size(75, 23);
-            this.btnChoose.TabIndex = 0;
-            this.btnChoose.Text = "choose";
-            this.btnChoose.UseVisualStyleBackColor = true;
-            this.btnChoose.Click += new System.EventHandler(this.btnChoose_Click);
-            // 
-            // pbFace
-            // 
-            this.pbFace.Location = new System.Drawing.Point(19, 29);
-            this.pbFace.Name = "pbFace";
-            this.pbFace.Size = new System.Drawing.Size(58, 52);
-            this.pbFace.TabIndex = 1;
-            this.pbFace.TabStop = false;
             // 
             // groupBox2
             // 
@@ -103,13 +74,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Enter your name:";
             // 
-            // tbName
+            // btnClose
             // 
-            this.tbName.Location = new System.Drawing.Point(7, 21);
-            this.tbName.Multiline = true;
-            this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(187, 31);
-            this.tbName.TabIndex = 0;
+            this.btnClose.Location = new System.Drawing.Point(109, 68);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnLogin
             // 
@@ -121,15 +94,44 @@
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnClose
+            // tbName
             // 
-            this.btnClose.Location = new System.Drawing.Point(109, 68);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.tbName.Location = new System.Drawing.Point(7, 21);
+            this.tbName.Multiline = true;
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(187, 31);
+            this.tbName.TabIndex = 0;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pbFace);
+            this.groupBox1.Controls.Add(this.btnChoose);
+            this.groupBox1.Location = new System.Drawing.Point(12, 17);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Choose a face:";
+            // 
+            // pbFace
+            // 
+            this.pbFace.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbFace.Location = new System.Drawing.Point(19, 18);
+            this.pbFace.Name = "pbFace";
+            this.pbFace.Size = new System.Drawing.Size(60, 74);
+            this.pbFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFace.TabIndex = 1;
+            this.pbFace.TabStop = false;
+            // 
+            // btnChoose
+            // 
+            this.btnChoose.Location = new System.Drawing.Point(109, 69);
+            this.btnChoose.Name = "btnChoose";
+            this.btnChoose.Size = new System.Drawing.Size(75, 23);
+            this.btnChoose.TabIndex = 0;
+            this.btnChoose.Text = "choose";
+            this.btnChoose.UseVisualStyleBackColor = true;
+            this.btnChoose.Click += new System.EventHandler(this.btnChoose_Click);
             // 
             // frmLogin
             // 
@@ -140,11 +142,11 @@
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFace)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbFace)).EndInit();
             this.ResumeLayout(false);
 
         }
