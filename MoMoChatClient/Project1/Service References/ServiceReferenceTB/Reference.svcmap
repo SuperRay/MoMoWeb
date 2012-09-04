@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e42d5d14-6913-436e-8e14-46f4adfdd14a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:10001/chatservice/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="b9f628e2-5ec3-4730-8b6f-ebf6e699e5db" SourceId="1" SourceUrl="net.tcp://localhost:10001/chatservice/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="cbfab789-a2f9-4dcd-af67-3e18fed67bb8" SourceId="1" SourceUrl="net.tcp://localhost:10001/chatservice/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="8e4af83d-dd69-40f2-834f-447a898ddb41" SourceId="1" SourceUrl="net.tcp://localhost:10001/chatservice/mex" />
+    <MetadataFile FileName="ChatLib.xsd" MetadataType="Schema" ID="a9177766-39a2-4722-835e-78d10ab895cd" SourceId="1" SourceUrl="net.tcp://localhost:10001/chatservice/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
