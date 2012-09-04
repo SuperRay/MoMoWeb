@@ -4,7 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Windows.Forms;
-using MoMoChatClient.ServiceReferenceYB;
+using MoMoChatClient.ServiceReferenceTB;
 
 namespace MoMoChatClient
 {
@@ -23,19 +23,23 @@ namespace MoMoChatClient
         ProxyCallBackEventArgs e);
         public event ProxyEventHandler ProxyEvent;
         public event ProxyCallBackEventHandler ProxyCallBackEvent;
+
         private Proxy_Singleton()
         {
         }
+
         // 接收发来的广播消息
         public void Receive(Person sender, string message)
         {
             Receive(sender, message, CallBackType.Receive);
         }
+
         // 接收发来的消息
         public void ReceiveWhisper(Person sender, string message)
         {
             Receive(sender, message, CallBackType.ReceiveWhisper);
         }
+
         // 根据callbacktype参数的值来封装消息，并触发ProxyCallBackEvent事件
         private void Receive(Person sender, string message, CallBackType callbackType)
         {
@@ -45,16 +49,19 @@ namespace MoMoChatClient
             e.person = sender;
             OnProxyCallBackEvent(e);
         }
+
         // 新的聊天者加入
         public void UserEnter(Person person)
         {
             UserEnterLeave(person, CallBackType.UserEnter);
         }
+
         // 聊天者离开
         public void UserLeave(Person person)
         {
             UserEnterLeave(person, CallBackType.UserLeave);
         }
+
         // 被UserEnter()以及UserLeave()调用，
         // 根据callbackType参数的值来封装消息，并触发ProxyCallBackEvent事件
         private void UserEnterLeave(Person person, CallBackType callbackType)
@@ -64,6 +71,7 @@ namespace MoMoChatClient
             e.callbackType = callbackType;
             OnProxyCallBackEvent(e);
         }
+
         // 异步的Join操作，首先调用BeginJoin，该操作完成后将调用OnEndJoin。
         public void Connect(Person p)
         {
@@ -72,6 +80,7 @@ namespace MoMoChatClient
             IAsyncResult iar =
             proxy.BeginJoin(p, new AsyncCallback(OnEndJoin), null);
         }
+
         // 作为异步调用中BeginInvoke的回调方法，
         // 获取当前在线用户的列表
         private void OnEndJoin(IAsyncResult iar)
@@ -88,6 +97,7 @@ namespace MoMoChatClient
                 MessageBoxIcon.Error);
             }
         }
+
         // 如果在线者列表不为空，则触发ProxyEvent事件
         private void HandleEndJoin(Person[] list)
         {
@@ -104,6 +114,7 @@ namespace MoMoChatClient
                 OnProxyEvent(e);
             }
         }
+
         // 触发ProxyCallBackEvent事件
         protected void OnProxyCallBackEvent(ProxyCallBackEventArgs e)
         {
@@ -112,6 +123,7 @@ namespace MoMoChatClient
                 ProxyCallBackEvent(this, e);
             }
         }
+
         // 触发ProxyEvent事件
         protected void OnProxyEvent(ProxyEventArgs e)
         {
@@ -120,6 +132,7 @@ namespace MoMoChatClient
                 ProxyEvent(this, e);
             }
         }
+
         // 单例模式，返回Proxy_Singleton类型的唯一对象
         public static Proxy_Singleton GetInstance()
         {
@@ -132,6 +145,7 @@ namespace MoMoChatClient
                 return singleton;
             }
         }
+
         //通过布尔值 pvt来决定是调用客户端代理的广播方法还是发送消息给
         //指定目标的方法
         public void SayAndClear(string to, string msg, bool pvt)
@@ -141,6 +155,7 @@ namespace MoMoChatClient
             else
                 proxy.Whisper(to, msg);
         }
+
         // 先调用客户端代理对象的Leave方法
         // 最后调用AbortProxy()来释放客户端代理对象
         public void ExitChatSession()
@@ -155,6 +170,7 @@ namespace MoMoChatClient
                 AbortProxy();
             }
         }
+
         // 调用客户端代理的Abort与Close方法
         public void AbortProxy()
         {

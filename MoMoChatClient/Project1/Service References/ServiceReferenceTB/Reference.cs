@@ -77,6 +77,10 @@ namespace MoMoChatClient.ServiceReferenceTB {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReferenceTB.IChat", CallbackContract=typeof(MoMoChatClient.ServiceReferenceTB.IChatCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IChat {
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern = true, Action = "http://tempuri.org/IChat/Join", ReplyAction = "http://tempuri.org/IChat/JoinResponse")]
+        System.IAsyncResult BeginJoin(Person name, System.AsyncCallback callback, object asyncState);
+
+        Person[] EndJoin(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(IsOneWay=true, IsTerminating=true, IsInitiating=false, Action="http://tempuri.org/IChat/Say")]
         void Say(string msg);
@@ -134,7 +138,17 @@ namespace MoMoChatClient.ServiceReferenceTB {
         public ChatClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(callbackInstance, binding, remoteAddress) {
         }
-        
+
+        public System.IAsyncResult BeginJoin(Person name, System.AsyncCallback callback, object asyncState)
+        {
+            return base.Channel.BeginJoin(name, callback, asyncState);
+        }
+
+        public Person[] EndJoin(System.IAsyncResult result)
+        {
+            return base.Channel.EndJoin(result);
+        }
+
         public void Say(string msg) {
             base.Channel.Say(msg);
         }
