@@ -15,7 +15,7 @@ namespace MoMoLib
             dbCon = new DBCBase("strConnection");
         }
 
-        public bool UserLogin(string username, string pwd)
+        public bool UserLogin(UserInfo user)
         {
             DataSet sdr = null;
             sdr = dbCon.RunSqlString("select * from dbo.人员表", "人员表");

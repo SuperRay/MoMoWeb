@@ -10,10 +10,10 @@ namespace MoMoLib
     public interface IUserOperate
     {
         [OperationContract]
-        bool UserLogin(string _username, string _pwd);
+        bool UserLogin(UserInfo user);
 
         //[OperationContract]
         //bool UserRegist(string _username, string _pwd);
-
+       
     }
 }

@@ -9,45 +9,313 @@
 //------------------------------------------------------------------------------
 
 namespace MoMoClient.ServiceReference2 {
+    using System.Runtime.Serialization;
+    using System;
     
     
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference2.IUserOperate")]
-    public interface IUserOperate {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="UserInfo", Namespace="http://schemas.datacontract.org/2004/07/MoMoLib")]
+    [System.SerializableAttribute()]
+    public partial class UserInfo : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/UserLogin", ReplyAction="http://tempuri.org/IUserOperate/UserLoginResponse")]
-        bool UserLogin(string _username, string _pwd);
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IUserOperateChannel : MoMoClient.ServiceReference2.IUserOperate, System.ServiceModel.IClientChannel {
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CompanyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EnglishNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string GraduteSchoolField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string IdNumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string JobField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LoginNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int MailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MobilPhoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MsnField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PhoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private MoMoClient.ServiceReference2.Image PhotoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string QQField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string QuestionAnswerField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuestionIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UserNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string WeiboField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Company {
+            get {
+                return this.CompanyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CompanyField, value) != true)) {
+                    this.CompanyField = value;
+                    this.RaisePropertyChanged("Company");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string EnglishName {
+            get {
+                return this.EnglishNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EnglishNameField, value) != true)) {
+                    this.EnglishNameField = value;
+                    this.RaisePropertyChanged("EnglishName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string GraduteSchool {
+            get {
+                return this.GraduteSchoolField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GraduteSchoolField, value) != true)) {
+                    this.GraduteSchoolField = value;
+                    this.RaisePropertyChanged("GraduteSchool");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string IdNumber {
+            get {
+                return this.IdNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.IdNumberField, value) != true)) {
+                    this.IdNumberField = value;
+                    this.RaisePropertyChanged("IdNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Job {
+            get {
+                return this.JobField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.JobField, value) != true)) {
+                    this.JobField = value;
+                    this.RaisePropertyChanged("Job");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LoginName {
+            get {
+                return this.LoginNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LoginNameField, value) != true)) {
+                    this.LoginNameField = value;
+                    this.RaisePropertyChanged("LoginName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Mail {
+            get {
+                return this.MailField;
+            }
+            set {
+                if ((this.MailField.Equals(value) != true)) {
+                    this.MailField = value;
+                    this.RaisePropertyChanged("Mail");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MobilPhone {
+            get {
+                return this.MobilPhoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MobilPhoneField, value) != true)) {
+                    this.MobilPhoneField = value;
+                    this.RaisePropertyChanged("MobilPhone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Msn {
+            get {
+                return this.MsnField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MsnField, value) != true)) {
+                    this.MsnField = value;
+                    this.RaisePropertyChanged("Msn");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Phone {
+            get {
+                return this.PhoneField;
+            }
+            set {
+                if ((this.PhoneField.Equals(value) != true)) {
+                    this.PhoneField = value;
+                    this.RaisePropertyChanged("Phone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public MoMoClient.ServiceReference2.Image Photo {
+            get {
+                return this.PhotoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
+                    this.PhotoField = value;
+                    this.RaisePropertyChanged("Photo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string QQ {
+            get {
+                return this.QQField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.QQField, value) != true)) {
+                    this.QQField = value;
+                    this.RaisePropertyChanged("QQ");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string QuestionAnswer {
+            get {
+                return this.QuestionAnswerField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.QuestionAnswerField, value) != true)) {
+                    this.QuestionAnswerField = value;
+                    this.RaisePropertyChanged("QuestionAnswer");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int QuestionID {
+            get {
+                return this.QuestionIDField;
+            }
+            set {
+                if ((this.QuestionIDField.Equals(value) != true)) {
+                    this.QuestionIDField = value;
+                    this.RaisePropertyChanged("QuestionID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string UserName {
+            get {
+                return this.UserNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UserNameField, value) != true)) {
+                    this.UserNameField = value;
+                    this.RaisePropertyChanged("UserName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Weibo {
+            get {
+                return this.WeiboField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.WeiboField, value) != true)) {
+                    this.WeiboField = value;
+                    this.RaisePropertyChanged("Weibo");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class UserOperateClient : System.ServiceModel.ClientBase<MoMoClient.ServiceReference2.IUserOperate>, MoMoClient.ServiceReference2.IUserOperate {
-        
-        public UserOperateClient() {
-        }
-        
-        public UserOperateClient(string endpointConfigurationName) : 
-                base(endpointConfigurationName) {
-        }
-        
-        public UserOperateClient(string endpointConfigurationName, string remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
-        }
-        
-        public UserOperateClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(endpointConfigurationName, remoteAddress) {
-        }
-        
-        public UserOperateClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress) {
-        }
-        
-        public bool UserLogin(string _username, string _pwd) {
-            return base.Channel.UserLogin(_username, _pwd);
-        }
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    public class Image {
     }
 }

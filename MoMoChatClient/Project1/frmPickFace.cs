@@ -28,7 +28,8 @@ namespace MoMoChatClient
         // 加载指定路径下各种类型的图片
         private void LoadImage()
         {
-            string path = "C:\\Users\\Administrator.RD-WUJIANLONG\\Documents\\Tencent Files\\All Users\\QQ\\Misc\\com.tencent.qqshow\\qqshow8";
+            //string path = "C:\\Users\\Administrator.RD-WUJIANLONG\\Documents\\Tencent Files\\All Users\\QQ\\Misc\\com.tencent.qqshow\\qqshow8";
+            string path = "C:\\Users\\Public\\Pictures\\Sample Pictures";
             DirectoryInfo di = new DirectoryInfo(path);
             //获得的各种类型文件存放的路径存放于FileInfo类型的数组中
             FileInfo[] jpgfis = di.GetFiles("*.jpg");

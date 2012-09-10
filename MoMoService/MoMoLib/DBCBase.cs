@@ -28,7 +28,7 @@ namespace MoMoLib
         {
             //connectionString = ConfigurationManager.ConnectionStrings[newConnectionString].ConnectionString;
             //connectionString = ConfigurationSettings.AppSettings[newConnectionString];
-            connectionString = "Data Source=127.0.0.1\\MYSQLSERVER;Initial Catalog=IBMS;Persist Security Info=True;User ID=sa;Password=123456";
+            connectionString = "Data Source=127.0.0.1;Initial Catalog=IBMS;Persist Security Info=True;User ID=ibms;Password=ibms";
             Connection = new SqlConnection(connectionString);
         }
 
