@@ -21,10 +21,10 @@
     <MetadataSource Address="http://localhost:8080/MoMoWeb/Service/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service1.wsdl" MetadataType="Wsdl" ID="a6c6419b-881b-4774-80fa-ebffb172429d" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
+    <MetadataFile FileName="service2.wsdl" MetadataType="Wsdl" ID="8add0c50-574a-4cff-9381-ccb2a1b056e4" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
     <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="12c925b8-7074-4cea-ad4d-520d1b5c8001" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
-    <MetadataFile FileName="service21.xsd" MetadataType="Schema" ID="010b60cd-2f65-4cf0-8342-045e8326bc79" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
-    <MetadataFile FileName="MoMoLib.xsd" MetadataType="Schema" ID="dd4f75d8-ebc6-4ee2-9bb4-2426e5f0d7dd" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
+    <MetadataFile FileName="service4.xsd" MetadataType="Schema" ID="5fe0e8db-972f-469f-8dbe-530936191fe6" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
+    <MetadataFile FileName="MoMoLib1.xsd" MetadataType="Schema" ID="d65fe45d-9f59-4d7d-86c1-bf6db0675e8f" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

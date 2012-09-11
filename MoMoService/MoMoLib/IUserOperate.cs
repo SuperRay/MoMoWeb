@@ -12,11 +12,13 @@ namespace MoMoLib
     public interface IUserOperate
     {
         [OperationContract]
-        bool UserLogin(UserInfo user);
-        //bool UserLogin(string x, string y);
+        string UserLogin(UserInfo user);
 
-        //[OperationContract]
-        //bool UserRegist(string _username, string _pwd);
+        [OperationContract]
+        string UserRegist(UserInfo userInfo);
+
+        [OperationContract]
+        int UpdateUserInfo(UserInfo UserInfo);
 
     }
     #region 用户类

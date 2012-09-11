@@ -13,6 +13,22 @@ namespace MoMoLib
     {
         private string _loginName;
         private string _userName;
+        private DateTime _birthday;
+        private string _sexy;
+
+        [DataMember]
+        public string Sexy
+        {
+            get { return _sexy; }
+            set { _sexy = value; }
+        }
+
+        [DataMember]
+        public DateTime Birthday
+        {
+            get { return _birthday; }
+            set { _birthday = value; }
+        }
 
         [DataMember]
         public string UserName
@@ -36,6 +52,7 @@ namespace MoMoLib
             get { return _password; }
             set { _password = value; }
         }
+
         //private Bitmap _photo;
         //[DataMember]
         //public Bitmap Photo
@@ -43,6 +60,7 @@ namespace MoMoLib
         //    get { return _photo; }
         //    set { _photo = value; }
         //}
+
         private int _phone;
         [DataMember]
         public int Phone

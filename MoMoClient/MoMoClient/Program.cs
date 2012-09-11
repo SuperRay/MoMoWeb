@@ -14,10 +14,12 @@ namespace MoMoClient
 
             using (UserOperateClient myClient = new UserOperateClient())
             {
-                
-                Console.Write("Your word: ");
-                string word = Console.ReadLine();
-                bool answer = myClient.UserLogin("", "");
+                UserInfo user = new UserInfo();
+                Console.Write("Your Name: ");
+                user.LoginName = Console.ReadLine();
+                Console.Write("Password:");
+                user.Password = Console.ReadLine();
+                string answer = myClient.UserRegist(user);
                 Console.WriteLine("Client says:{0}", answer);
             }
             Console.ReadLine();

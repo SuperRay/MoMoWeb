@@ -23,6 +23,9 @@ namespace MoMoClient.ServiceReference1 {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime BirthdayField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string CompanyField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -65,6 +68,9 @@ namespace MoMoClient.ServiceReference1 {
         private int QuestionIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SexyField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string UserNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -77,6 +83,19 @@ namespace MoMoClient.ServiceReference1 {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Birthday {
+            get {
+                return this.BirthdayField;
+            }
+            set {
+                if ((this.BirthdayField.Equals(value) != true)) {
+                    this.BirthdayField = value;
+                    this.RaisePropertyChanged("Birthday");
+                }
             }
         }
         
@@ -263,6 +282,19 @@ namespace MoMoClient.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Sexy {
+            get {
+                return this.SexyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SexyField, value) != true)) {
+                    this.SexyField = value;
+                    this.RaisePropertyChanged("Sexy");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string UserName {
             get {
                 return this.UserNameField;
@@ -303,7 +335,13 @@ namespace MoMoClient.ServiceReference1 {
     public interface IUserOperate {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/UserLogin", ReplyAction="http://tempuri.org/IUserOperate/UserLoginResponse")]
-        bool UserLogin(MoMoClient.ServiceReference1.UserInfo user);
+        string UserLogin(MoMoClient.ServiceReference1.UserInfo user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/UserRegist", ReplyAction="http://tempuri.org/IUserOperate/UserRegistResponse")]
+        string UserRegist(MoMoClient.ServiceReference1.UserInfo userInfo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/UpdateUserInfo", ReplyAction="http://tempuri.org/IUserOperate/UpdateUserInfoResponse")]
+        int UpdateUserInfo(MoMoClient.ServiceReference1.UserInfo UserInfo);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -333,8 +371,16 @@ namespace MoMoClient.ServiceReference1 {
                 base(binding, remoteAddress) {
         }
         
-        public bool UserLogin(MoMoClient.ServiceReference1.UserInfo user) {
+        public string UserLogin(MoMoClient.ServiceReference1.UserInfo user) {
             return base.Channel.UserLogin(user);
+        }
+        
+        public string UserRegist(MoMoClient.ServiceReference1.UserInfo userInfo) {
+            return base.Channel.UserRegist(userInfo);
+        }
+        
+        public int UpdateUserInfo(MoMoClient.ServiceReference1.UserInfo UserInfo) {
+            return base.Channel.UpdateUserInfo(UserInfo);
         }
     }
 }
