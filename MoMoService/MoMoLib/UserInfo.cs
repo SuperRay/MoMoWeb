@@ -36,14 +36,13 @@ namespace MoMoLib
             get { return _password; }
             set { _password = value; }
         }
-
-        private Image _photo;
-        [DataMember]
-        public Image Photo
-        {
-            get { return _photo; }
-            set { _photo = value; }
-        }
+        //private Bitmap _photo;
+        //[DataMember]
+        //public Bitmap Photo
+        //{
+        //    get { return _photo; }
+        //    set { _photo = value; }
+        //}
         private int _phone;
         [DataMember]
         public int Phone

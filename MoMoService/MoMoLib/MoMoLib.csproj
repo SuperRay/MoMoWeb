@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBCBase.cs" />
-    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="UserOperate.cs" />
     <Compile Include="IUserOperate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

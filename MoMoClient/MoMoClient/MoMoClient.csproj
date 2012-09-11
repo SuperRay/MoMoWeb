@@ -67,12 +67,24 @@
     <None Include="Service References\ServiceReference1\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReference1\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ServiceReference1\UserOperate.wsdl" />
+    <None Include="Service References\ServiceReference2\MoMoLib.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ServiceReference2\service.wsdl" />
     <None Include="Service References\ServiceReference2\service.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\ServiceReference2\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference2\System.Drawing.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

@@ -56,9 +56,6 @@ namespace MoMoClient.ServiceReference1 {
         private int PhoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private MoMoClient.ServiceReference1.Image PhotoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string QQField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -227,19 +224,6 @@ namespace MoMoClient.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public MoMoClient.ServiceReference1.Image Photo {
-            get {
-                return this.PhotoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
-                    this.PhotoField = value;
-                    this.RaisePropertyChanged("Photo");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public string QQ {
             get {
                 return this.QQField;
@@ -314,8 +298,43 @@ namespace MoMoClient.ServiceReference1 {
         }
     }
     
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IUserOperate")]
+    public interface IUserOperate {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/UserLogin", ReplyAction="http://tempuri.org/IUserOperate/UserLoginResponse")]
+        bool UserLogin(MoMoClient.ServiceReference1.UserInfo user);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IUserOperateChannel : MoMoClient.ServiceReference1.IUserOperate, System.ServiceModel.IClientChannel {
+    }
+    
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    public class Image {
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class UserOperateClient : System.ServiceModel.ClientBase<MoMoClient.ServiceReference1.IUserOperate>, MoMoClient.ServiceReference1.IUserOperate {
+        
+        public UserOperateClient() {
+        }
+        
+        public UserOperateClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public UserOperateClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public UserOperateClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public UserOperateClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public bool UserLogin(MoMoClient.ServiceReference1.UserInfo user) {
+            return base.Channel.UserLogin(user);
+        }
     }
 }
