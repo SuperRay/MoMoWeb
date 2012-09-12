@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>用户注册页面</title>
+    <link media="screen" href="../CSS/PageMainStyle.css" rel="Stylesheet" type="text/css" />
+    <style type="text/css">
+        td.right
+        {
+            text-align: right;
+            font-family: STSong;
+            font-variant: initial;
+            font-style: normal;
+        }
+
+        div.btnSubmit input
+        {
+            height: 36px;
+            position: relative;
+            background-image: url(../Sources/button-submit.gif);
+            background-repeat: no-repeat;
+            background-position: right 0px;
+            float: left;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 0px 15px 2px 15px;
+            margin: 20px 0px 20px 0px;
+            border: 0px;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        .inputBox
+        {
+            width: 250px;
+        }
+
+        div.firstLine
+        {
+            /*font-style: italic;
+            font-family: 'Microsoft YaHei';*/
+            color: #FF0000;
+        }
+
+        div.secondLine
+        {
+            font-family: YouYuan;
+            font-size: small;
+            color: #808080;
+        }
+
+        label.error
+        {
+            background: url(../Sources/Error.png) no-repeat 0px 0px;
+            color: Red;
+            padding-left: 20px;
+        }
+    </style>
+    <script type="text/javascript" src="../Scripts/jquery-1.3.1.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="../JS/RegistPage.js"></script>
+</head>
+<body>
+    <div id="header" style="background-color: #FFFFFF">
+        <h2>毛毛好友通訊網</h2>
+    </div>
+    <div id="navigation">
+        <div class="content_Regist">
+            <div class="Regist_Content01">
+                <h4>创建新的MMF帐户</h4>
+                <div class="rInfor_Content">
+                    <form id="regInfoForm" class="cmForm" action="#" method="get">
+                    <table width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td class="right" valign="top" width="150px"><span style="color: #FF0000">*</span>用户名：
+                                </td>
+                                <td>
+                                    <div class="firstLine">
+                                    </div>
+                                    <input type="text" class="inputBox" maxlength="50" name="username" id="regName" />
+                                    <div class="secondLine">(3-20位字母、数字或下划线的组合，首字符必须为字母)</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>密码：
+                                </td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="password" class="inputBox" maxlength="50" id="pass1" name="password1" />
+                                    </div>
+                                    <div class="secondLine">（为了您的帐户安全，强烈建议您的密码使用字符+数字等多种不同类型的组合，并且密码长度大于5位。）</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>再次输入密码：
+                                </td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="password" class="inputBox" maxlength="50" id="pass2" name="password2" />
+                                    </div>
+                                    <div class="secondLine">（请确保输入密码正确。）</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>E-mail：
+                                </td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="100" name="email" />
+                                    </div>
+                                    <div class="secondLine">(激活码将发到你的邮箱中，只有激活帐户才能使用！)</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btnSubmit">
+                                        <input type="submit" id="btnReg" value="立即注册" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </form>
+                </div>
+            </div>
+            <div class="userNotic">
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content" style="background-color: #FFFFFF"></div>
+</body>
+</html>

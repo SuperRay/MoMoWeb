@@ -18,7 +18,7 @@ namespace MoMoLib
         string UserRegist(UserInfo userInfo);
 
         [OperationContract]
-        int UpdateUserInfo(UserInfo UserInfo);
+        bool UpdateUserInfo(UserInfo UserInfo);
 
     }
     #region 用户类

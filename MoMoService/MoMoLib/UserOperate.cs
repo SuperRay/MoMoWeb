@@ -74,7 +74,7 @@ namespace MoMoLib
             return ret;
         }
 
-        public int UpdateUserInfo(UserInfo strUserInfo)
+        public bool UpdateUserInfo(UserInfo strUserInfo)
         {
             try
             {
@@ -108,7 +108,14 @@ namespace MoMoLib
 
                 int rowCount = 0;
                 dbCon.RunProcedure("UserDAL_UpdateUserInfo", sqlPara, out rowCount);
-                return rowCount;
+                if (rowCount > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception ex)
             {

@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link media="screen" href="../Styles/MainStyle.css" rel="Stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../Styles/skin/skin_0.css" type="text/css" id="cssfile" />
+    <style type="text/css">
+        td.right
+        {
+            text-align: right;
+            font-family: STSong;
+            font-variant: initial;
+            font-style: normal;
+        }
+
+        .inputBox
+        {
+            width: 250px;
+        }
+
+        /*div.btnSubmit
+        {
+            position: relative;
+        }*/
+
+        div.btnSubmit input
+        {
+            height: 36px;
+            position: relative;
+            background-image: url(../Sources/button-submit.gif);
+            background-repeat: no-repeat;
+            background-position: right 0px;
+            float: left;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 0px 15px 2px 15px;
+            margin: 20px 0px 20px 0px;
+            border: 0px;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        div.firstLine
+        {
+            /*font-style: italic;
+            font-family: 'Microsoft YaHei';*/
+            /*color: #FF0000;*/
+        }
+
+        div.secondLine
+        {
+            font-family: YouYuan;
+            font-size: small;
+            color: #808080;
+        }
+
+        label.error
+        {
+            background: url(../Sources/Error.png) no-repeat 0px 0px;
+            color: Red;
+            padding-left: 20px;
+        }
+
+        .auto-style1
+        {
+            height: 30px;
+        }
+        #content
+        {
+            background-color: #FFFFFF;
+        }
+    </style>
+    <script type="text/javascript" src="../Scripts/jquery-1.3.1.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="../JS/IDCardPage.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a id="logo" href="#">MoMoFriendsWeb</a>
+        <ul id="skin">
+            <li id="skin_0" title="蓝色" class="selected">蓝色</li>
+            <li id="skin_1" title="紫色">紫色</li>
+            <li id="skin_2" title="红色">红色</li>
+            <li id="skin_3" title="天蓝色">天蓝色</li>
+            <li id="skin_4" title="橙色">橙色</li>
+            <li id="skin_5" title="淡绿色">淡绿色</li>
+        </ul>
+    </div>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">个人信息</a></li>
+            <li><a href="#">我的通讯录</a></li>
+            <li><a href="#">我的好友群</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="content_Regist">
+            <div class="Regist_Content01">
+                <h2>个人名片信息</h2>
+                <div class="rInfor_Content">
+                    <form id="idInfoForm" class="cmForm" action="#" method="get">
+                    <table width="100%" border="0">
+                        <tbody>
+                            <tr>
+                                <td class="right" valign="top" width="150px"><span style="color: #FF0000">*</span>姓名：
+                                </td>
+                                <td>
+                                    <div class="firstLine">
+                                    </div>
+                                    <input type="text" class="inputBox" maxlength="50" name="username" 
+                                        id="username" />
+                                    <div class="secondLine">(为了方便朋友与您联系，请尽量填写本人真实姓名！)</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>出生日期：
+                                </td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="20" name="birthdate" 
+                                            id="birthday" />
+                                    </div>
+                                    <div class="secondLine">（填写生日朋友会给力带来意外的惊喜喔！！）</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150" style="height: 30px"><span style="color: #FF0000">
+                                    *</span>性别： </td>
+                                <td class="auto-style1">
+                                    <div class="firstLine">
+                                        <label>
+                                            <input type="radio" checked="checked" value="男" name="sex" class="sex" />男
+                                        </label>
+                                        <label>
+                                            <input type="radio" value="女" name="sex" style="width: 20px" class="sex" />女
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>毕业院校：
+                                </td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="100" name="school" id="school" />
+                                    </div>
+                                    <div class="secondLine">(通过院校信息能快速找到你的同学或校友呢！)</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150">职业：</td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="50" name="job" id="job" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150">联系电话：</td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="20" name="mobilphone" 
+                                            id="mobilphone" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150">QQ：</td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="15" name="QQ" id="QQ" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150">MSN：</td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="50" name="MSN" id="MSN" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="right" valign="top" width="150">微博：</td>
+                                <td>
+                                    <div class="firstLine">
+                                        <input type="text" class="inputBox" maxlength="50" name="weibo" id="weibo" />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btnSubmit">
+                                        <input type="submit" id="btnReg" value="下一步" style="width: 140px;" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <a id="address" href="#">www.mmfWeb.com.cn</a>
+    </div>
+</body>
+</html>

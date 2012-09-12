@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fd0301e5-5168-4960-aa3a-eca4967946e6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/MoMoWeb/Service/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="e45c1126-dff4-4ad2-a956-8bb0ee712ff5" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="b263de5d-31bb-430d-b212-d810d5231d61" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="3bdb19eb-e925-4e87-bf35-1385d58f6797" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
+    <MetadataFile FileName="MoMoLib.xsd" MetadataType="Schema" ID="7a86fce9-9f9c-4377-9fbf-ee2b3db981f0" SourceId="1" SourceUrl="http://localhost:8080/MoMoWeb/Service/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

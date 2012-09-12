@@ -53,13 +53,13 @@ namespace MoMoLib
             set { _password = value; }
         }
 
-        //private Bitmap _photo;
-        //[DataMember]
-        //public Bitmap Photo
-        //{
-        //    get { return _photo; }
-        //    set { _photo = value; }
-        //}
+        private byte[] _photo;
+        [DataMember]
+        public byte[] Photo
+        {
+            get { return _photo; }
+            set { _photo = value; }
+        }
 
         private int _phone;
         [DataMember]

@@ -59,6 +59,9 @@ namespace MoMoClient.ServiceReference1 {
         private int PhoneField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] PhotoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string QQField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -238,6 +241,19 @@ namespace MoMoClient.ServiceReference1 {
                 if ((this.PhoneField.Equals(value) != true)) {
                     this.PhoneField = value;
                     this.RaisePropertyChanged("Phone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Photo {
+            get {
+                return this.PhotoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhotoField, value) != true)) {
+                    this.PhotoField = value;
+                    this.RaisePropertyChanged("Photo");
                 }
             }
         }

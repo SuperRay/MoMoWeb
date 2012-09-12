@@ -1,0 +1,49 @@
+﻿/* GENERAL ------------------------------------------------------------------ */
+
+html
+{
+	height: 100%;
+}
+
+/* Zero default margin & padding around common elements */
+body, dd, dl, dt, form, h1, h2, h3, h5, h6, ul, ol, li, p
+{
+	margin: 0;
+	border: none;
+	padding: 0;
+}
+
+body
+{
+	height: 100%;
+	background-color: #333333;
+	background-image: url(../Sources/bg.gif);
+	background-position: 0% 0;
+	color: #000000;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-size: 62.5%;*/
+	/*text-align: center;*/
+	overflow: auto;
+}
+
+#header
+{
+	height: 90px;
+	background-color: #B2DD32;
+	background-image: url(../Sources/header1.jpg);
+	background-repeat: repeat-x;
+}
+
+#navigation
+{
+	background-color: #FFFFFF;
+	width: 70%;
+	position: absolute;
+	left: 15%;
+}
+
+h2
+{
+	alignment-baseline: central;
+}
