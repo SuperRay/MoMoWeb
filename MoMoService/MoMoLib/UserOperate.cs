@@ -27,7 +27,7 @@ namespace MoMoLib
                 SqlParameter[] sqlPara = new SqlParameter[2];
                 sqlPara[0] = new SqlParameter("@userName", SqlDbType.VarChar, 50);
                 sqlPara[0].Value = user.LoginName;
-                sqlPara[1] = new SqlParameter("@password", SqlDbType.VarChar, 15);
+                sqlPara[1] = new SqlParameter("@password", SqlDbType.VarChar, 50);
                 sqlPara[1].Value = user.Password;
 
                 sqlData = dbCon.RunProcedure("UserDAL_Login", sqlPara);
@@ -59,7 +59,7 @@ namespace MoMoLib
                 SqlParameter[] sqlPara = new SqlParameter[3];
                 sqlPara[0] = new SqlParameter("@userName", SqlDbType.VarChar, 50);
                 sqlPara[0].Value = user.LoginName;
-                sqlPara[1] = new SqlParameter("@password", SqlDbType.VarChar, 15);
+                sqlPara[1] = new SqlParameter("@password", SqlDbType.VarChar, 50);
                 sqlPara[1].Value = user.Password;
                 sqlPara[2] = new SqlParameter("@strReturn", SqlDbType.VarChar, 50);
                 sqlPara[2].Direction = System.Data.ParameterDirection.Output;

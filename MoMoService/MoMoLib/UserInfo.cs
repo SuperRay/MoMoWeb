@@ -16,6 +16,17 @@ namespace MoMoLib
         private DateTime _birthday;
         private string _sexy;
 
+        public UserInfo()
+        {
+            UserName = "";
+            Sexy = "";
+            EnglishName = "";
+            Job = "";
+            QQ = "";
+            Msn = "";
+            Weibo = "";
+        }
+
         [DataMember]
         public string Sexy
         {

@@ -59,7 +59,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HTML\IDCardPage.html" />
+    <Content Include="HTML\IDCardPage.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="HTML\LoginPage.htm" />
     <Content Include="HTML\MainPage.html" />
     <Content Include="HTML\RegistPage.html" />
@@ -131,6 +133,12 @@
     <Content Include="Styles\MainPage.css" />
     <Content Include="Styles\MainStyle.css" />
     <Content Include="Styles\PageMainStyle.css" />
+    <Content Include="Styles\skin\skin_0.css" />
+    <Content Include="Styles\skin\skin_1.css" />
+    <Content Include="Styles\skin\skin_2.css" />
+    <Content Include="Styles\skin\skin_3.css" />
+    <Content Include="Styles\skin\skin_4.css" />
+    <Content Include="Styles\skin\skin_5.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +151,7 @@
     <Compile Include="Ajax\RegistHandler.ashx.cs">
       <DependentUpon>RegistHandler.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Common\CommonFunction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\HttpServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>

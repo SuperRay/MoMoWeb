@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.SessionState;
+using MoMoFriends;
 using MoMoFriends.HttpServiceReference;
 
 namespace MaoMaoFriendsWeb.Ajax
@@ -10,7 +11,7 @@ namespace MaoMaoFriendsWeb.Ajax
     /// <summary>
     /// Summary description for RegistHandler
     /// </summary>
-    public class RegistHandler : IHttpHandler
+    public class RegistHandler : IHttpHandler, IRequiresSessionState
     {
         public void ProcessRequest(HttpContext context)
         {
@@ -19,16 +20,15 @@ namespace MaoMaoFriendsWeb.Ajax
                 //context.Response.ContentType = "text/plain";
                 //context.Response.Write("Hello World");
                 UserInfo user = new UserInfo();
+                
                 user.LoginName = System.Web.HttpUtility.UrlDecode(context.Request["username"]);
-                user.Password = System.Web.HttpUtility.UrlDecode(context.Request["password"]);
+                user.Password = CommonFunction.StringToMD5(System.Web.HttpUtility.UrlDecode(context.Request["password"]), 16);
                 try
                 {
                     if (insUserBLL.UserRegist(user) == "注册成功")
                     {
-                        //context.Session.Add("loginName", username); 
-                        context.Application.Add("loginName", user.UserName);
-                        //HttpApplication httpApp = new HttpApplication();
-                        //httpApp.Application.Add("loginName", username);
+                        context.Session.Add("loginname", user.LoginName);
+                        context.Application.Add("loginName", user.LoginName);
                         context.Response.Write("success");
                     }
                     else

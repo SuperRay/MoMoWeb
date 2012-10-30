@@ -4,13 +4,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using MoMoFriends.HttpServiceReference;
+using MoMoFriends;
+using System.Web.SessionState;
 
 namespace MaoMaoFriendsWeb.Ajax
 {
     /// <summary>
     /// Summary description for LoginHandler
     /// </summary>
-    public class LoginHandler : IHttpHandler
+    public class LoginHandler : IHttpHandler, IRequiresSessionState
     {
 
         public void ProcessRequest(HttpContext context)
@@ -19,14 +21,16 @@ namespace MaoMaoFriendsWeb.Ajax
             {
                 UserInfo user = new UserInfo();
                 user.LoginName = context.Request["username"].ToString();
-                user.Password = context.Request["password"].ToString();                
+                user.Password = CommonFunction.StringToMD5(context.Request["password"].ToString(), 16);
 
                 try
                 {
-                    if (insUserBLL.UserLogin(user) == user.Password)
+                    string pwd = insUserBLL.UserLogin(user);
+                    if (pwd == user.Password)
                     {
                         context.Response.Write("success");
                         //存储session
+                        context.Session["loginname"] = user.LoginName;
                     }
                     else
                     {

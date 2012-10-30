@@ -61,6 +61,8 @@
             var strQQ = encodeURI($("#QQ").val());
             var strMsn = encodeURI($("#MSN").val());
             var strWeibo = encodeURI($("#weibo").val());
+            var strEnglishName = encodeURI($("#englishname").val());
+
             $.ajax({
                 url: "../Ajax/IDInfoHandler.ashx",
                 type: "post",
@@ -75,7 +77,8 @@
                         mobilphone: strMobil,
                         qq: strQQ,
                         msn: strMsn,
-                        weibo: strWeibo
+                        weibo: strWeibo,
+                        englishname: strEnglishName
                         //$("#idInfoForm").serialize(),
                     },
 
@@ -85,7 +88,7 @@
                         parent.document.location.href = "../HTML/MainPage.html";
                     }
                     else {
-                        alert("注册失败！");
+                        alert("个人信息录入失败！");
                         //对注册失败信息进行反馈
                     }
                 }

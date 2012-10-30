@@ -19,7 +19,8 @@ namespace MaoMaoFriendsWeb.Ajax
                 //context.Response.ContentType = "text/plain";
                 //context.Response.Write("Hello World");
                 UserInfo strUserInfo = new UserInfo();
-                strUserInfo.LoginName = context.Application.Equals("loginName").ToString();
+                //strUserInfo.LoginName = context.Application.Equals("loginName").ToString();
+                strUserInfo.LoginName =context.Session["loginname"].ToString();
                 strUserInfo.UserName = System.Web.HttpUtility.UrlDecode(context.Request["username"]);
                 strUserInfo.Birthday = Convert.ToDateTime(System.Web.HttpUtility.UrlDecode(context.Request["birthday"]));
                 strUserInfo.Sexy = System.Web.HttpUtility.UrlDecode(context.Request["sex"]);
@@ -29,6 +30,7 @@ namespace MaoMaoFriendsWeb.Ajax
                 strUserInfo.QQ = System.Web.HttpUtility.UrlDecode(context.Request["qq"]);
                 strUserInfo.Msn = System.Web.HttpUtility.UrlDecode(context.Request["msn"]);
                 strUserInfo.Weibo = System.Web.HttpUtility.UrlDecode(context.Request["weibo"]);
+                strUserInfo.EnglishName = System.Web.HttpUtility.UrlDecode(context.Request["englishname"]);
                 try
                 {                    
                     if (insUserBLL.UpdateUserInfo(strUserInfo) == true)
