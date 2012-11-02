@@ -44,7 +44,7 @@ namespace MoMoFriends.HttpServiceReference {
         private string LoginNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int MailField;
+        private string MailField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string MobilPhoneField;
@@ -181,12 +181,12 @@ namespace MoMoFriends.HttpServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Mail {
+        public string Mail {
             get {
                 return this.MailField;
             }
             set {
-                if ((this.MailField.Equals(value) != true)) {
+                if ((object.ReferenceEquals(this.MailField, value) != true)) {
                     this.MailField = value;
                     this.RaisePropertyChanged("Mail");
                 }
@@ -358,6 +358,9 @@ namespace MoMoFriends.HttpServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/UpdateUserInfo", ReplyAction="http://tempuri.org/IUserOperate/UpdateUserInfoResponse")]
         bool UpdateUserInfo(MoMoFriends.HttpServiceReference.UserInfo UserInfo);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/GetUserInfo", ReplyAction="http://tempuri.org/IUserOperate/GetUserInfoResponse")]
+        MoMoFriends.HttpServiceReference.UserInfo GetUserInfo(string loginName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -397,6 +400,10 @@ namespace MoMoFriends.HttpServiceReference {
         
         public bool UpdateUserInfo(MoMoFriends.HttpServiceReference.UserInfo UserInfo) {
             return base.Channel.UpdateUserInfo(UserInfo);
+        }
+        
+        public MoMoFriends.HttpServiceReference.UserInfo GetUserInfo(string loginName) {
+            return base.Channel.GetUserInfo(loginName);
         }
     }
 }

@@ -43,4 +43,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetUserInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loginName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/MoMoLib" minOccurs="0" name="GetUserInfoResult" nillable="true" type="q4:UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

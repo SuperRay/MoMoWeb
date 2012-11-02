@@ -357,7 +357,7 @@ namespace MoMoClient.ServiceReference1 {
         string UserRegist(MoMoClient.ServiceReference1.UserInfo userInfo);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/UpdateUserInfo", ReplyAction="http://tempuri.org/IUserOperate/UpdateUserInfoResponse")]
-        int UpdateUserInfo(MoMoClient.ServiceReference1.UserInfo UserInfo);
+        bool UpdateUserInfo(MoMoClient.ServiceReference1.UserInfo UserInfo);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -395,7 +395,7 @@ namespace MoMoClient.ServiceReference1 {
             return base.Channel.UserRegist(userInfo);
         }
         
-        public int UpdateUserInfo(MoMoClient.ServiceReference1.UserInfo UserInfo) {
+        public bool UpdateUserInfo(MoMoClient.ServiceReference1.UserInfo UserInfo) {
             return base.Channel.UpdateUserInfo(UserInfo);
         }
     }

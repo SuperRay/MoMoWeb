@@ -7,7 +7,7 @@ using System.Text;
 
 namespace MoMoLib
 {
-    public class UserOperate:IUserOperate
+    public class UserOperate : IUserOperate
     {
         DBCBase dbCon;
         public UserOperate()
@@ -120,6 +120,45 @@ namespace MoMoLib
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+
+        public UserInfo GetUserInfo(string loginName)
+        {
+            UserInfo myUserInfo = null;
+            SqlDataReader userData;
+            SqlParameter[] sqlPara = new SqlParameter[1];
+            sqlPara[0] = new SqlParameter("@loginName", SqlDbType.VarChar, 50);
+            sqlPara[0].Value = loginName;
+
+            userData = dbCon.RunProcedure("UserDAL_GetUserInfo", sqlPara);
+            try
+            {
+                while (userData.Read())
+                {
+                    myUserInfo = new UserInfo();
+                    myUserInfo.LoginName = Convert.ToString(userData["LoginName"]);
+                    myUserInfo.UserName = Convert.ToString(userData["Name"]);
+                    myUserInfo.EnglishName = Convert.ToString(userData["EnglishName"]);
+                    myUserInfo.Sexy = Convert.ToString(userData["Sexy"]);
+                    myUserInfo.Birthday = Convert.ToDateTime(userData["Birthday"]);
+                    myUserInfo.GraduteSchool = Convert.ToString(userData["GraduteSchool"]);
+                    myUserInfo.Company = Convert.ToString(userData["Company"]);
+                    myUserInfo.Job = Convert.ToString(userData["Job"]);
+                    myUserInfo.QQ = Convert.ToString(userData["QQ"]);
+                    myUserInfo.Mail = Convert.ToString(userData["Mail"]);
+                    myUserInfo.Msn = Convert.ToString(userData["MSN"]);
+                    myUserInfo.MobilPhone = Convert.ToString(userData["MobilPhone"]);
+                }
+                return myUserInfo;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                userData.Close();
             }
         }
     }

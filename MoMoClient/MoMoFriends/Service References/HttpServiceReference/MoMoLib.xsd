@@ -9,7 +9,7 @@
       <xs:element minOccurs="0" name="IdNumber" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Job" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="LoginName" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Mail" type="xs:int" />
+      <xs:element minOccurs="0" name="Mail" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="MobilPhone" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Msn" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />

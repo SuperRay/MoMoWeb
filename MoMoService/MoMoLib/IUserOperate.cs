@@ -20,6 +20,9 @@ namespace MoMoLib
         [OperationContract]
         bool UpdateUserInfo(UserInfo UserInfo);
 
+        [OperationContract]
+        UserInfo GetUserInfo(string loginName);
+
     }
     #region 用户类
     //[DataContract]

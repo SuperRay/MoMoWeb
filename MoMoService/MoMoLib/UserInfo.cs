@@ -102,9 +102,9 @@ namespace MoMoLib
             get { return _questionID; }
             set { _questionID = value; }
         }
-        private int _mail;
+        private string _mail;
         [DataMember]
-        public int Mail
+        public string Mail
         {
             get { return _mail; }
             set { _mail = value; }

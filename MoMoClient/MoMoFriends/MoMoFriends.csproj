@@ -115,8 +115,12 @@
     <Content Include="Scripts\jquery.metadata.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.messages_cn.js" />
+    <Content Include="Ajax\GetInfoHandler.ashx" />
     <None Include="Service References\HttpServiceReference\configuration91.svcinfo" />
     <None Include="Service References\HttpServiceReference\configuration.svcinfo" />
+    <Content Include="Service References\HttpServiceReference\MoMoFriends.HttpServiceReference.UserInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\HttpServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
@@ -142,6 +146,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajax\GetInfoHandler.ashx.cs">
+      <DependentUpon>GetInfoHandler.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Ajax\IDInfoHandler.ashx.cs">
       <DependentUpon>IDInfoHandler.ashx</DependentUpon>
     </Compile>
