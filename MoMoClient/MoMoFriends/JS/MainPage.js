@@ -100,7 +100,8 @@ function loadUserInfo() {
         url: "../Ajax/GetInfoHandler.ashx",
         success: function (result) {
             var loginName = result;
-            $(".name").text = loginName;
+            $("#tbname").value = loginName;
+            $("#name").title = loginName;
         }
     })
 }

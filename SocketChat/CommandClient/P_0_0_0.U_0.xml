@@ -1,0 +1,2567 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>P_0_0_0.U_0</name>
+    </assembly>
+    <members>
+        <member name="T:Proshot.UtilityLib.ServiceController">
+            <summary>
+            ServiceController Component
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.ServiceController.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ServiceController.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.ServiceController.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ServiceController.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.PictureBox">
+             <summary>
+            PictureBox Control.
+             </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PictureBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PictureBox.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PictureBox.#ctor">
+            <summary>
+            PictureBox
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.Label">
+            <summary>
+            Label Control.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.Label.penColor">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Label.#ctor">
+            <summary>
+            Active TextBox Class
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Label.OnMouseEnter(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.Label.OnMouseLeave(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.Label.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Label.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Label.BorderColor">
+            <summary>
+            Specifies the color of hover border
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Label.BorderWidth">
+            <summary>
+            Specifies the width of hover border
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Label.ShowBorder">
+            <summary>
+            Specifies that the border must be shown on MouseHover or not.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.HelpProvider">
+            <summary>
+            HelpProvider Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.HelpProvider.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.HelpProvider.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.HelpProvider.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.HelpProvider.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DirectorySearcher">
+            <summary>
+            DirectorySearcher Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DirectorySearcher.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.DirectorySearcher.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DirectorySearcher.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.DirectorySearcher.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.ResourceManager.LoadMethod">
+            <summary>
+            Specifies the method that you want to load the resource container assembly by it.
+            </summary>
+        </member>
+        <member name="F:Proshot.ResourceManager.LoadMethod.FromCallingCode">
+            <summary>
+            Gets the assembly that contains the method that called the currently executing code.The parent assebmly in other word.
+            </summary>
+        </member>
+        <member name="F:Proshot.ResourceManager.LoadMethod.FromCurrentCode">
+            <summary>
+            Gets the assembly that contains the code that is currently executing. 
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.ContextMenuStrip">
+            <summary>
+            ContextMenu Control.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.ContextMenuStrip.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ContextMenuStrip.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ContextMenuStrip.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ContextMenuStrip.#ctor">
+            <summary>
+            ContextMenu
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.BackgroundWorker">
+            <summary>
+            Background Worker Class
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BackgroundWorker.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.BackgroundWorker.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.BackgroundWorker.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.BackgroundWorker.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.StatusStrip">
+            <summary>
+            StatusStrip Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.StatusStrip.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.StatusStrip.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.StatusStrip.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.StatusStrip.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.MenuStrip">
+            <summary>
+            MenuStrip Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MenuStrip.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.MenuStrip.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MenuStrip.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.MenuStrip.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.ListBox">
+            <summary>
+            ListBox Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListBox.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListBox.#ctor">
+            <summary>
+            ListBox
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.ListBox.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.FontComboBox">
+            <summary>
+            Font ComboBox Control.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.ComboBox">
+            <summary>
+            ComboBox Control.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.ComboBox.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ComboBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ComboBox.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ComboBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.ComboBox.#ctor">
+            <summary>
+            ComboBox Control
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.ComboBox.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FontComboBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FontComboBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FontComboBox.#ctor">
+            <summary>
+            Font ComboBox Constructor
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FontComboBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)">
+            <summary>
+            OnMeasureItem
+            </summary>
+            <param name="e">MeasureItemEventArgs</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.FontComboBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)">
+            <summary>
+            OnDrawItem
+            </summary>
+            <param name="e">DrawItemEventArgs</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.FontComboBox.OnDropDown(System.EventArgs)">
+            <summary>
+            OnDropDown
+            </summary>
+            <param name="e">System.EventArgs</param>
+        </member>
+        <member name="P:Proshot.UtilityLib.FontComboBox.SampleString">
+             <summary>
+            The sample string that will show 
+             </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.FontComboBox.ShowSampleString">
+            <summary>
+            Specifies the combo must show the sample string or not
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.FontComboBox.SelectedFont">
+            <summary>
+            Selected font.The default size of font is 12.This is not accessible at design time
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.FontComboBox.SelectedFontName">
+            <summary>
+            The name of selected font.This is not accessible at design time
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DomainUpDown">
+            <summary>
+            DomainUpDown Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DomainUpDown.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DomainUpDown.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DomainUpDown.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DomainUpDown.#ctor">
+            <summary>
+            DomainUpDown
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DomainUpDown.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CheckedListBox">
+            <summary>
+            CheckedListBox Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckedListBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckedListBox.#ctor">
+            <summary>
+            CheckedListBox Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CheckedListBox.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckedListBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckedListBox.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CheckedListBox.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.VScrollBar">
+            <summary>
+            Vertical ScrollBar
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.VScrollBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.VScrollBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.VScrollBar.#ctor">
+            <summary>
+            Vertical ScrollBar
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.TabControl">
+            <summary>
+            TabControl.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TabControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TabControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TabControl.#ctor">
+            <summary>
+            TabControl
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.LinkLabel">
+            <summary>
+            LinkLabel Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.LinkLabel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.LinkLabel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.LinkLabel.#ctor">
+            <summary>
+            LinkLabel
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.FileSystemWatcher">
+            <summary>
+            FileSystemWatcher Component
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.FileSystemWatcher.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FileSystemWatcher.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.FileSystemWatcher.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FileSystemWatcher.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CommonDialogs.PopupSkins">
+            <summary>
+            Specifies the default predefined template for popup window.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.MSNSkin">
+            <summary>
+            MSN messenger like popup.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.SmileySkin">
+            <summary>
+            A skin with a yellow smiley at top of it.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.ManSkin">
+            <summary>
+            A skin with a cartoon man.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.InfoSkin">
+            <summary>
+            Info popup dialog.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.AlertSkin">
+            <summary>
+            Alert popup dialog.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.TimerSkin">
+            <summary>
+            Timer popup dialog.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.MouseSkin">
+            <summary>
+            Mouse skin.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupSkins.SmallInfoSkin">
+            <summary>
+            Small info popup.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CommonDialogs.PopupStatus">
+            <summary>
+            List of the different popup animation status.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupStatus.Hidden">
+            <summary>
+            When the popup window is hidden.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupStatus.Appearing">
+            <summary>
+            When the popup window is appearing.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupStatus.Visible">
+            <summary>
+            When the popup window is appeared.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.PopupStatus.Disappearing">
+            <summary>
+            When the popup window is desappearing.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CommonDialogs.FormIcons">
+            <summary>
+            Form Icons
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.FormIcons.Question">
+            <summary>
+            Question Icon
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.FormIcons.Error">
+            <summary>
+            Error Icon
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.FormIcons.Info">
+            <summary>
+            Information Icon
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.FormIcons.Stop">
+            <summary>
+            Stop Icon
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.FormIcons.Alert">
+            <summary>
+            Alert Icon
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.Timer">
+            <summary>
+            Timer Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Timer.#ctor">
+            <summary>
+            Timer
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Timer.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Timer.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.MonthCalendar">
+            <summary>
+            MonthCalendar Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MonthCalendar.#ctor">
+            <summary>
+            MonthCalendar
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MonthCalendar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MonthCalendar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.MainMenu">
+            <summary>
+            MainMenu Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MainMenu.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MainMenu.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MainMenu.#ctor">
+            <summary>
+            MainMenu
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DataGrid">
+            <summary>
+            DataGrid Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DataGrid.#ctor">
+            <summary>
+            DataGrid
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.DataGrid.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DataGrid.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DataGrid.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.Form">
+            <summary>
+            Right-To-Left Form.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.Form.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Form.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.Form.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Form.#ctor">
+            <summary>
+            Creates an instance of Right-To-Left Form.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.BindingNavigator">
+            <summary>
+            BindingNavigator Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BindingNavigator.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.BindingNavigator.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.BindingNavigator.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.BindingNavigator.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.TableLayoutPanel">
+            <summary>
+            TableLayoutPanel Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.TableLayoutPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TableLayoutPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TableLayoutPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TableLayoutPanel.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CommonDialogs.frmAlert">
+            <summary>
+            Summary description for frmAlert.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.frmAlert.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmAlert.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmAlert.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmAlert.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Process Key Stroks
+            </summary>
+            <param name="keyData">Data about pressed key</param>
+            <returns>Boolean value</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmAlert.#ctor(System.String)">
+            <summary>
+            Alert Form 
+            </summary>
+            <param name="message">Message to show in dialog</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmAlert.#ctor(System.String,System.String)">
+            <summary>
+            Alert Form 
+            </summary>
+            <param name="message">Message to show in dialog</param>
+            <param name="caption">Caption of alert form</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmAlert.#ctor(System.String,System.String,Proshot.UtilityLib.CommonDialogs.FormIcons)">
+            <summary>
+            Alert Form 
+            </summary>
+            <param name="message">Message to show in dialog</param>
+            <param name="caption">Caption of alert form</param>
+            <param name="icon">Icon to show in alert form</param>
+        </member>
+        <member name="T:Proshot.UtilityLib.Button">
+            <summary>
+            Button Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Button.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Button.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Button.#ctor">
+            <summary>
+            Button Control
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.TreeView">
+            <summary>
+            TreeView Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.#ctor">
+            <summary>
+            TreeView
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.GetHierachicalIndex(System.Windows.Forms.TreeNode)">
+            <summary>
+            Returns the hierachical indices string of node.For Example : 0.1.2.1
+            </summary>
+            <param name="node">The TreeNode you want to get its hierachical path</param>
+            <returns>The Hierachical path</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.CreateNodeFromHierachicalIndex(System.String,System.String)">
+            <summary>
+            Create a new node and add it to the TreeView in location specified by first parameter of method.
+            </summary>
+            <param name="hierachicalIndex">The location of new node in tree.</param>
+            <param name="nodeText">The Text of new node to add.</param>
+            <returns>Newly added node</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.CreateNodeFromHierachicalIndex(System.String,System.String,System.Object)">
+            <summary>
+            Create a new node and add it to the TreeView in location specified by first parameter of method.
+            </summary>
+            <param name="hierachicalIndex">The location of new node in tree.</param>
+            <param name="nodeText">The Text of new node to add.</param>
+            <param name="nodeTag">The Tag of new node to add.</param>
+            /// <returns>Newly added node</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.GetNodeFromHierachicalIndex(System.String)">
+            <summary>
+            Gets the TreeNode object with specified hierachical index.
+            </summary>
+            <param name="hierachicalIndex">The hierachical index of target node.</param>
+            <returns>Target TreeNode Object. </returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.SaveToFile(System.String)">
+            <summary>
+            Save all nodes of tree to a binary file.
+            </summary>
+            <param name="fileName">Target file name to save the TreeView.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.LoadFromFile(System.String)">
+            <summary>
+            Load a Saved TreeView from file.
+            </summary>
+            <param name="fileName">Input file to load.This file must be created by SaveToFile method.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TreeView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TreeView.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.ToolBar">
+            <summary>
+            ToolBar Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolBar.#ctor">
+            <summary>
+            Toolbar
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.ToolBar.Mirrored">
+            <summary>
+            Change to the right-to-left visual layout.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.ToolBar.CreateParams">
+            <summary>
+            Gets the visual parameters of the control
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.Splitter">
+            <summary>
+            Splitter Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Splitter.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Splitter.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Splitter.#ctor">
+            <summary>
+            Splitter
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.SerialPort">
+            <summary>
+            SerialPort Controler
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.SerialPort.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.SerialPort.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.SerialPort.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.SerialPort.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.RichTextBox">
+            <summary>
+            RichTextBox Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.RichTextBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.RichTextBox.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.RichTextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.RichTextBox.#ctor">
+            <summary>
+            RichTextBox
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.RichTextBox.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.PropertyGrid">
+            <summary>
+            PropertyGrid Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PropertyGrid.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.PropertyGrid.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PropertyGrid.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.PropertyGrid.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DateTimePicker">
+            <summary>
+            DateTimePicker Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimePicker.#ctor">
+            <summary>
+            DateTimePicker
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimePicker.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimePicker.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CheckBox">
+            <summary>
+            CheckBox Control.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CheckBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.CheckBox.#ctor">
+            <summary>
+            CheckBox Control
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CheckBox.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.BindingSource">
+            <summary>
+            Binding Source
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.BindingSource.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BindingSource.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.BindingSource.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.BindingSource.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.TextBox">
+            <summary>
+            TextBox Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.#ctor">
+            <summary>
+            Masked Textbox control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.OnMouseEnter(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.OnMouseLeave(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.OnEnter(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.OnLeave(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.TextBox.OnValidating(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.ShowBorder">
+            <summary>
+            Specifies that the border must be shown on MouseHover or not.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.AllowEnterKey">
+            <summary>
+            Specifies the control must accept the Enter key or not
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.SelectOnFocus">
+            <summary>
+            Specifies that the Text of control must be select when it is focused
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.BorderColor">
+            <summary>
+            Specifies the color of hover border
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.BorderWidth">
+            <summary>
+            Specifies the width of hover border
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.ReadOnly">
+            <summary>
+            Specifies that the TextBox must be ReadOnly or not
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.CurrentMask">
+            <summary>
+            Current Mask Of Control
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.TextBox.FloatValue">
+            <summary>
+            If you set the value of CurrentMask to 'FloatMask' you can get or set this value
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.MaskType">
+            <summary>
+            Mask Type of TextBox
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.MaskType.FloatMask">
+            <summary>
+            Floating Pint Number
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.MaskType.IntegerMask">
+            <summary>
+            Integer Number	
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.MaskType.IdentityCode">
+            <summary>
+            Identity Code.Digits,'-' and '_' are allowed
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.MaskType.None">
+            <summary>
+            All characters are allowed.This is a normal TextBox
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.StatusBar">
+            <summary>
+            StatusBar.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.StatusBar.#ctor">
+            <summary>
+            StatusBar
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.StatusBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.StatusBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.StatusBar.Mirrored">
+            <summary>
+            Change to the right-to-left visual layout.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.StatusBar.CreateParams">
+            <summary>
+            Gets the visual parameters of the control
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.Panel">
+            <summary>
+            Panel Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Panel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Panel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Panel.#ctor">
+            <summary>
+            Panel
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.NumericUpDown">
+            <summary>
+            NumericUpDown Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.NumericUpDown.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.NumericUpDown.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.NumericUpDown.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.NumericUpDown.#ctor">
+            <summary>
+            NumericUpDown
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.NumericUpDown.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.ListView">
+            <summary>
+            ListView Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListView.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.ListView.#ctor">
+            <summary>
+            ListView
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.ListView.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DataGridView">
+            <summary>
+            DataGridView Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.DataGridView.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DataGridView.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.DataGridView.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DataGridView.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.WebBrowser">
+            <summary>
+            WebBrowser Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.WebBrowser.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.WebBrowser.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.WebBrowser.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.WebBrowser.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.TrackBar">
+            <summary>
+            TrackBar Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TrackBar.#ctor">
+            <summary>
+            TrackBar
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TrackBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.TrackBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.PrintDocument">
+            <summary>
+            PrintDocument.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PrintDocument.#ctor">
+            <summary>
+            Print Document
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PrintDocument.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.PrintDocument.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.ErrorProvider">
+            <summary>
+            ErrorProvider Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ErrorProvider.#ctor">
+            <summary>
+            ErrorProvider
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ErrorProvider.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ErrorProvider.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.HScrollBar">
+            <summary>
+            Horizontal ScrollBar Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.HScrollBar.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.HScrollBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.HScrollBar.#ctor">
+            <summary>
+            Horizontal ScrollBar
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.FlowLayoutPanel">
+            <summary>
+            FlowLayoutPanel Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FlowLayoutPanel.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.FlowLayoutPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.FlowLayoutPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.FlowLayoutPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DurationPicker">
+            <summary>
+            Duration Picker Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DurationPicker.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DurationPicker.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DurationPicker.#ctor">
+            <summary>
+            Duration Picker
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DurationPicker.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+             <summary>
+            Keyboard Command Processor
+             </summary>
+             <param name="msg">Message</param>
+             <param name="keyData">KeyData</param>
+             <returns>Boolean value</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DurationPicker.OnDurationValueChanged(System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:Proshot.UtilityLib.DurationPicker.DurationValueChanged">
+            <summary>
+            Event
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.MaxLenghtOfDay">
+            <summary>
+            Specifies maximum length of day filed
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.MaxLenghtOfMonth">
+            <summary>
+            Specifies maximum length month day filed
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.MaxLenghtOfYear">
+            <summary>
+            Specifies maximum length of year filed
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.ReadOnly">
+            <summary>
+            Specifies that the control must be readonly or not
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.Day">
+            <summary>
+            Gets or sets the day part of duration
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.Month">
+            <summary>
+            Gets or sets the month part of duration
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.Year">
+            <summary>
+            Gets or sets the year part of duration
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.DurationPicker.CurrentDuration">
+            <summary>
+            Gets or Sets the current duration of control.The format of this string is Day|Month|Year
+            </summary>
+        </member>
+        <member name="T:Proshot.ResourceManager.Resourcer">
+             <summary>
+            Manage embedded resources in dll or executable files
+             </summary>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.#ctor(System.String)">
+            <summary>
+            Creates a recource manager to manage embedded resources in dll or executable files.
+            </summary>
+            <param name="containerFile">Executable or Dll file name</param>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.#ctor(Proshot.ResourceManager.LoadMethod)">
+            <summary>
+            Creates a recource manager to manage embedded resources of an assembly.
+            </summary>
+            <param name="loadMethod">Specifies the method that you want to load the resource container assembly by it.</param>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.#ctor(System.Type)">
+            <summary>
+            Gets the currently loaded assembly in which the specified class is defined.
+            </summary>
+            <param name="containedClass">A Type object representing a class in the assembly that will be returned.</param>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.LoadImage(System.String)">
+            <summary>
+            Load an embedded image file from dll or executable
+            </summary>
+            <param name="imageFileName">The name of image file that you want to load.Note that this name is CASE SENSITIVE</param>
+            <returns>Loaded image</returns>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.LoadIcon(System.String)">
+            <summary>
+            Loads an embedded icon file from a dll or executable.
+            </summary>
+            <param name="iconFileName">The name of icon file that you want to load.Note that this name is CASE SENSITIVE</param>
+            <returns>Loded icon</returns>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.LoadXML(System.String)">
+            <summary>
+            Loads an embedded xml file from a dll or executable.
+            </summary>
+            <param name="xmlFileName">The name of xml file that you want to load.Note that this name is CASE SENSITIVE</param>
+            <returns>Loded xml</returns>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.GetResourceStream(System.String)">
+            <summary>
+            Loads an embedded resource file from a dll or executable.You can use this method to extract any ambedded resource types.For example AVI or WAV files.
+            </summary>
+            <param name="resourceFileName">The name of resource file that you want to load.Note that this name is CASE SENSITIVE</param>
+            <returns>A stream contains loaded resource file</returns>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.ExtractAndSaveToFile(System.String)">
+            <summary>
+            Loads an embedded resource file from a dll or executable and save it to a seperate new file named with the resource file name.
+            </summary>
+            <param name="resourceFileName">The name of resource file that you want to load.Note that this name is CASE SENSITIVE</param>
+        </member>
+        <member name="M:Proshot.ResourceManager.Resourcer.ExtractAndSaveToFile(System.String,System.String)">
+            <summary>
+            Load an embedded resource file from dll or executable and save it to a seperate new file
+            </summary>
+            <param name="resourceFileName">The name of resource file that you want to load.Note that this name is CASE SENSITIVE</param>
+            <param name="destinationFileName">Output file name</param>
+        </member>
+        <member name="T:Proshot.UtilityLib.MaskedTextBox">
+            <summary>
+            MaskedTextBox Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.MaskedTextBox.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MaskedTextBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.MaskedTextBox.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.MaskedTextBox.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.GroupBox">
+            <summary>
+            GroupBox Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.GroupBox.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.GroupBox.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.GroupBox.#ctor">
+            <summary>
+            GroupBox
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DirectoryEntry">
+            <summary>
+            DirectoryEntry Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.DirectoryEntry.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DirectoryEntry.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.DirectoryEntry.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DirectoryEntry.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CommonDialogs.frmPopup">
+            <summary>
+            frmPopup allows to display MSN style/Skinned instant messaging popups.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.#ctor(Proshot.UtilityLib.CommonDialogs.PopupSkins)">
+            <summary>
+            Creates an instance of popup window.You can specify a predesigned skin or pass your own bitmap to this instance.
+            </summary>
+            <param name="skin">The predesigned skin.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.#ctor(System.Drawing.Image,System.Drawing.Color,System.Drawing.Image,System.Drawing.Color,System.Drawing.Point,System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Creates an instance of popup window.You can specify a predesigned skin or pass your own bitmap to this instance.
+            </summary>
+            <param name="backgroundBitmap">Background bitmap.(Hint : Don't use anti alias for your backgrounds.Smooth the edges of the picture manually.)</param>
+            <param name="backgroundTransparency">The transparency color of the background image.</param>
+            <param name="closeButtonBitmap">A Tri-State close button control.</param>
+            <param name="closeButtonTransparency">The transparency color of the close button image.</param>
+            <param name="closeButtonLocation">The location of the close button on the dialog.</param>
+            <param name="titleRect">The rectangle that specifies the bounds of title string.</param>
+            <param name="contentRect">The rectangle that specifies the bounds of content string.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.#ctor(System.String,System.Drawing.Color,System.Drawing.Image,System.Drawing.Color,System.Drawing.Point,System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Creates an instance of popup window.You can specify a predesigned skin or pass your own bitmap to this instance.
+            </summary>
+            <param name="backgroundBitmap">Background bitmap.(Hint : Don't use anti alias for your backgrounds.Smooth the edges of the picture manually.)</param>
+            <param name="backgroundTransparency">The transparency color of the background image.</param>
+            <param name="closeButtonBitmap">A Tri-State close button control.</param>
+            <param name="closeButtonTransparency">The transparency color of the close button image.</param>
+            <param name="closeButtonLocation">The location of the close button on the dialog.</param>
+            <param name="titleRect">The rectangle that specifies the bounds of title string.</param>
+            <param name="contentRect">The rectangle that specifies the bounds of content string.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.#ctor(System.Drawing.Image,System.Drawing.Color,System.String,System.Drawing.Color,System.Drawing.Point,System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Creates an instance of popup window.You can specify a predesigned skin or pass your own bitmap to this instance.
+            </summary>
+            <param name="backgroundBitmap">Background bitmap.(Hint : Don't use anti alias for your backgrounds.Smooth the edges of the picture manually.)</param>
+            <param name="backgroundTransparency">The transparency color of the background image.</param>
+            <param name="closeButtonBitmap">A Tri-State close button control.</param>
+            <param name="closeButtonTransparency">The transparency color of the close button image.</param>
+            <param name="closeButtonLocation">The location of the close button on the dialog.</param>
+            <param name="titleRect">The rectangle that specifies the bounds of title string.</param>
+            <param name="contentRect">The rectangle that specifies the bounds of content string.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.#ctor(System.String,System.Drawing.Color,System.String,System.Drawing.Color,System.Drawing.Point,System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Creates an instance of popup window.You can specify a predesigned skin or pass your own bitmap to this instance.
+            </summary>
+            <param name="backgroundBitmap">Background bitmap.(Hint : Don't use anti alias for your backgrounds.Smooth the edges of the picture manually.)</param>
+            <param name="backgroundTransparency">The transparency color of the background image.</param>
+            <param name="closeButtonBitmap">A Tri-State close button control.</param>
+            <param name="closeButtonTransparency">The transparency color of the close button image.</param>
+            <param name="closeButtonLocation">The location of the close button on the dialog.</param>
+            <param name="titleRect">The rectangle that specifies the bounds of title string.</param>
+            <param name="contentRect">The rectangle that specifies the bounds of content string.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.ShowPopup(System.String,System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Displays the popup for a certain amount of time
+            </summary>
+            <param name="strTitle">The string which will be shown as the title of the popup</param>
+            <param name="strContent">The string which will be shown as the content of the popup</param>
+            <param name="nTimeToShow">Duration of the showing animation (in milliseconds)</param>
+            <param name="nTimeToStay">Duration of the visible state before collapsing (in milliseconds)</param>
+            <param name="nTimeToHide">Duration of the hiding animation (in milliseconds)</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.Hide">
+            <summary>
+            Hides the popup
+            </summary>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.OnTimer(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <param name="ea"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.OnMouseEnter(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="ea"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.OnMouseLeave(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="ea"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mea"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mea"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="mea"></param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmPopup.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="pea"></param>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.PopupState">
+            <summary>
+            Gets the current TaskbarState (Hidden, showing, visible, hiding).
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.TitleText">
+            <summary>
+            Get/Set the popup Title Text.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.ContentText">
+            <summary>
+            Get/Set the popup Content Text.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.NormalTitleColor">
+            <summary>
+            Get/Set the Normal Title Color.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.HoverTitleColor">
+            <summary>
+            Get/Set the Hover Title Color.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.NormalContentColor">
+            <summary>
+            Get/Set the Normal Content Color.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.HoverContentColor">
+            <summary>
+            Get/Set the Hover Content Color.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.NormalTitleFont">
+            <summary>
+            Get/Set the Normal Title Font.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.HoverTitleFont">
+            <summary>
+            Get/Set the Hover Title Font.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.NormalContentFont">
+            <summary>
+            Get/Set the Normal Content Font.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.HoverContentFont">
+            <summary>
+            Get/Set the Hover Content Font.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.KeepVisibleOnMousOver">
+            <summary>
+            Get/Set the value that indicates if the popup should remain visible when the mouse pointer is over it.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.ReShowOnMouseOver">
+            <summary>
+            Get/Set the value that indicates if the popup should appear again when mouse moves over it while it's disAppearing.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.TitleRectangle">
+            <summary>
+            Get/Set the rectangle that the title must be drawn inside it.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.ContentRectangle">
+            <summary>
+            Get/Set the rectangle that the content must be drawn inside it.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.TitleClickable">
+            <summary>
+            Get/Set the value that specifies the title should be clickable or not.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.ContentClickable">
+            <summary>
+            Get/Set the value that specifies the content should be clickable or not.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.CloseClickable">
+            <summary>
+            Get/Set the value that specifies the close button should be clickable or not.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.CommonDialogs.frmPopup.EnableSelectionRectangle">
+            <summary>
+            Get/Set the value that specifies the rectangle must be drawn around the mouse hovered content.
+            </summary>
+        </member>
+        <member name="E:Proshot.UtilityLib.CommonDialogs.frmPopup.CloseClick">
+            <summary>
+            Occures when the close button clicked.
+            </summary>
+        </member>
+        <member name="E:Proshot.UtilityLib.CommonDialogs.frmPopup.TitleClick">
+            <summary>
+            Occures when the title string clicked.
+            </summary>
+        </member>
+        <member name="E:Proshot.UtilityLib.CommonDialogs.frmPopup.ContentClick">
+            <summary>
+            Occures when the content string clicked.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.ToolStrip">
+            <summary>
+            ToolStrip Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.ToolStrip.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolStrip.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolStrip.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolStrip.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.CommonDialogs.frmQuestion">
+            <summary>
+            Summary description for frmQuestion.
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.CommonDialogs.frmQuestion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmQuestion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmQuestion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmQuestion.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            Process Key Stroks
+            </summary>
+            <param name="keyData">Data about pressed key</param>
+            <returns>Boolean value</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmQuestion.#ctor(System.String)">
+            <summary>
+            Question Form 
+            </summary>
+            <param name="message">Message to show in dialog</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmQuestion.#ctor(System.String,System.String)">
+            <summary>
+            Question Form 
+            </summary>
+            <param name="message">Message to show in dialog</param>
+            <param name="caption">Caption of question form</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.CommonDialogs.frmQuestion.#ctor(System.String,System.String,Proshot.UtilityLib.CommonDialogs.FormIcons)">
+            <summary>
+            Question Form 
+            </summary>
+            <param name="message">Message to show in dialog</param>
+            <param name="caption">Caption of alert form</param>
+            <param name="icon">Icon to show in question form</param>
+        </member>
+        <member name="T:Proshot.UtilityLib.ToolStripContainer">
+            <summary>
+            ToolStripContainer Control
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolStripContainer.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.ToolStripContainer.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolStripContainer.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.ToolStripContainer.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.RadioButton">
+            <summary>
+            RadioButton Control.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.RadioButton.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Override method.
+            </summary>
+            <param name="msg"></param>
+            <param name="keyData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.RadioButton.#ctor">
+            <summary>
+            RadioButton
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.RadioButton.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.RadioButton.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.RadioButton.JumpToNextControlByEnter">
+            <summary>
+            [Gets/Sets] Specifies that the next control should be focused when Enter key pressed.
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.EventLog">
+            <summary>
+            EventLog Control
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.EventLog.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.EventLog.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Proshot.UtilityLib.EventLog.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.EventLog.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.DateTimeUtils">
+            <summary>
+            This is an static class that contains some static methods to manipulating date and time.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.GetDateParts(System.Int32)">
+            <summary>
+            Parses an integer date and returns its parts.
+            </summary>
+            <param name="date">The integer date.Ex : 13540212</param>
+            <returns>An integer that contains date parts.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.CompareDates(System.Int32,System.Int32)">
+            <summary>
+            Compares two dates and returns 0 if equal,1 if the firstDate is greater than second date and -1 otherwise.
+            </summary>
+            <param name="firstDate">The first date to compare.Ex : 13840113</param>
+            <param name="secondDate">The second date to compare.Ex : 13841210</param>
+            <returns>Returns 0 if equal,1 if the firstDate is greater than second date and -1 otherwise</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.CompareDates(System.String,System.String,System.Char)">
+            <summary>
+            Compares two dates and returns 0 if equal,1 if the firstDate is greater than second date and -1 otherwise.
+            </summary>
+            <param name="firstDate">The first date to compare.Ex : 1384/1/13</param>
+            <param name="secondDate">The second date to compare.Ex : 1384/12/10</param>
+            <param name="seperator">The seperator character of date strinng.For example '/'.</param>
+            <returns>Returns 0 if equal,1 if the firstDate is greater than second date and -1 otherwise</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.ConvertDateToInt(System.String,System.Char)">
+            <summary>
+            Converts a date to an integer.Pass the date string in the YYYY/M/D or YYYY/MM/DD or YYYY/M/DD or YYYY/MM/D format.This method will return -1 if the input string will have been in bad format.
+            </summary>
+            <param name="date">The date string.</param>
+            <param name="seperator">The seperator character of date strinng.For example '/'.</param>
+            <returns>Converted int value.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.ConvertIntToDate(System.Int32,System.Char)">
+            <summary>
+            Converts an integer to a date string.Pass the inpute integer in the YYYYMMDD format.This method will return "" if the inpute will have been in bad format.
+            </summary>
+            <param name="dateInteger"> The inpute integer in the YYYYMMDD format.</param>
+            <param name="seperator">The seperator character.</param>
+            <returns>The converted date string.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.GetTimeParts(System.Int32)">
+            <summary>
+            Parses an integer time and returns its parts.
+            </summary>
+            <param name="time">The integer time.Ex : 130122</param>
+            <returns>An integer that contains time parts.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.ConvertTimeToInt(System.String,System.Char)">
+            <summary>
+            Converts a time to an integer.Pass the time string in the HH:MM:SS [H(H)*:M(M)*:S(S)*] format.This method will return -1 if the input string will have been in bad format.
+            </summary>
+            <param name="time">The time string.</param>
+            <param name="seperator">The seperator character of time strinng.For example ':'.</param>
+            <returns>Converted int value.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.ConvertIntToTime(System.Int32,System.Char)">
+            <summary>
+            Converts an integer to a time string.Pass the inpute integer in the HHMMSS format.This method will return "" if the inpute will have been in bad format.
+            </summary>
+            <param name="timeInteger"> The inpute integer in the HHMMSS format.</param>
+            <param name="seperator">The seperator character.</param>
+            <returns>The converted time string.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.SubtractTimes(System.Int32,System.Int32)">
+            <summary>
+            Subtracts two times and returns a Duration type.
+            </summary>
+            <param name="firstTime">The first time to compare.Ex : 130212</param>
+            <param name="secondTime">The second time to compare.Ex : 102334</param>
+            <returns>The duration type that contains subtract information.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.SubtractTimes(System.String,System.String,System.Char)">
+            <summary>
+            Subtracts two times and returns a Duration type.
+            </summary>
+            <param name="firstTime">The first time to compare.Ex : 2:03:12</param>
+            <param name="secondTime">The second time to compare.Ex : 23:13:3</param>
+            <param name="seperator">The seperator character of time strinng.For example ':'.</param>
+            <returns>The duration type that contains subtract information.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.CompareTimes(System.Int32,System.Int32)">
+            <summary>
+            Compares two times and returns 0 if equal,1 if the firstTime is greater than second time and -1 otherwise.
+            </summary>
+            <param name="firstTime">The first time to compare.Ex : 122312</param>
+            <param name="secondTime">The second time to compare.Ex : 32114(= 03:21:14)</param>
+            <returns>Returns 0 if equal,1 if the firstTime is greater than second time and -1 otherwise.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.DateTimeUtils.CompareTimes(System.String,System.String,System.Char)">
+            <summary>
+            Compares two times and returns 0 if equal,1 if the firstTime is greater than second time and -1 otherwise.
+            </summary>
+            <param name="firstTime">The first time to compare.Ex : 12:6:0</param>
+            <param name="secondTime">The second time to compare.Ex : 2:7:11</param>
+            <param name="seperator">The seperator character of time strinng.For example ':'.</param>
+            <returns>Returns 0 if equal,1 if the firstTime is greater than second time and -1 otherwise</returns>
+        </member>
+        <member name="T:Proshot.UtilityLib.Duration">
+            <summary>
+            The duration data type.
+            </summary>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_Addition(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded + operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_Subtraction(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded - operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_Equality(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded == operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_Inequality(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded != operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_GreaterThan(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded > operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_LessThan(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded <![CDATA[<]]> operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_LessThanOrEqual(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded <![CDATA[<=]]> operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.op_GreaterThanOrEqual(Proshot.UtilityLib.Duration,Proshot.UtilityLib.Duration)">
+            <summary>
+            Overloaded >= operator.
+            </summary>
+            <param name="rightSide"></param>
+            <param name="leftSide"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.ToString">
+            <summary>
+            Converts this object to string.
+            </summary>
+            <returns>string.</returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Proshot.UtilityLib.Duration.Parse(System.String)">
+            <summary>
+            Converts an string in HH:MM:SS format to a duration object.
+            </summary>
+            <param name="durationString">An string in HH:MM:SS format.</param>
+            <returns>Duration object.</returns>
+        </member>
+        <member name="P:Proshot.UtilityLib.Duration.IntValue">
+            <summary>
+            Gets and Sets the integer value of this duration object.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Duration.Hours">
+            <summary>
+            Hours.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Duration.Minuts">
+            <summary>
+            Minutes.
+            </summary>
+        </member>
+        <member name="P:Proshot.UtilityLib.Duration.Seconds">
+            <summary>
+            Seconds.
+            </summary>
+        </member>
+        <member name="T:Proshot.LanguageManager.LanguageActions">
+            <summary>
+            This class contains some static methos to switch application language from Farsi to English and vice versa.
+            </summary>
+        </member>
+        <member name="M:Proshot.LanguageManager.LanguageActions.#ctor">
+            <summary>
+            This is a sealed class.There is no need to instantiate this class.All members are static. 
+            </summary>
+        </member>
+        <member name="M:Proshot.LanguageManager.LanguageActions.ChangeLanguageToFarsi">
+            <summary>
+            change the system active language to Farsi
+            </summary>
+            <returns>Return false if the language is not installed on the system,otherwise return true</returns>
+        </member>
+        <member name="M:Proshot.LanguageManager.LanguageActions.ChangeLanguageToEnglish">
+            <summary>
+            Change the system active language to English
+            </summary>
+            <returns>Return false if the language is not installed on the system,otherwise return true</returns>
+        </member>
+        <member name="T:Proshot.UtilityLib.BorderStyle">
+            <summary>
+            BorderStyle
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BorderStyle.None">
+            <summary>
+            No Border
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BorderStyle.Single">
+            <summary>
+            Single Line Border
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BorderStyle.Raised3D">
+            <summary>
+            Raised 3D Border
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BorderStyle.Sunken3D">
+            <summary>
+            Sunken 3D Border
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.BorderStyle.Shadow">
+            <summary>
+            Border with shadow
+            </summary>
+        </member>
+        <member name="T:Proshot.UtilityLib.Orientation">
+            <summary>
+            Orientation
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.Orientation.Horizontal">
+            <summary>
+            Horizontal
+            </summary>
+        </member>
+        <member name="F:Proshot.UtilityLib.Orientation.Vertical">
+            <summary>
+            Vertical
+            </summary>
+        </member>
+    </members>
+</doc>
