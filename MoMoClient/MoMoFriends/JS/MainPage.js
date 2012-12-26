@@ -9,16 +9,27 @@
         switchSkin(cookie_skin);
     };
     //皮肤换肤功能实现---结束
-//=================================================================================================
+    //=================================================================================================
 
     //加载表格数据---开始
     var oTable = $('#example').dataTable({
         "bProcessing": true,
+        //"sAjaxSource": '../Scripts/arrays.txt',
+        "bServerSide": true,
+        "sPaginationType": 'full_numbers',
         "sAjaxSource": '../Scripts/arrays.txt',
-        "sPaginationType": 'full_numbers'
+        "fnServerData": function (fnCallback, oSettings) {
+            oSettings.jqXHR = $.ajax({
+                "url": "../Ajax/GetInfoHandler.ashx",
+                //"data": aoData,
+                "success": fnCallback,
+                "dataType": "jsonp",
+                "cache": false
+            });
+        }
     });
     //加载表格数据---结束
-//=================================================================================================
+    //=================================================================================================
 
     //广告自动滑动显示---开始
     var len = $(".num > li").length;
@@ -45,24 +56,31 @@
 
     //给表格上的数据添加单击事件---开始
     $('#example tbody tr', oTable.fnGetNodes()).live('dblclick', function () {
-		var sTitle;
-		var nTds = $('td', this);
-		var sBrowser = $(nTds[1]).text();
-		var sGrade = $(nTds[4]).text();
-		
-		if ( sGrade == "A" )
-			sTitle =  sBrowser+' will provide a first class (A) level of CSS support.';
-		else if ( sGrade == "C" )
-			sTitle = sBrowser+' will provide a core (C) level of CSS support.';
-		else if ( sGrade == "X" )
-			sTitle = sBrowser+' does not provide CSS support or has a broken implementation. Block CSS.';
-		else
-			sTitle = sBrowser+' will provide an undefined level of CSS support.';
-		
-		alert( sTitle )
-	} );
+        var sTitle;
+        var nTds = $('td', this);
+        var sBrowser = $(nTds[1]).text();
+        var sGrade = $(nTds[4]).text();
+
+        if (sGrade == "A")
+            sTitle = sBrowser + ' will provide a first class (A) level of CSS support.';
+        else if (sGrade == "C")
+            sTitle = sBrowser + ' will provide a core (C) level of CSS support.';
+        else if (sGrade == "X")
+            sTitle = sBrowser + ' does not provide CSS support or has a broken implementation. Block CSS.';
+        else
+            sTitle = sBrowser + ' will provide an undefined level of CSS support.';
+
+        alert(sTitle)
+    });
+
     //给表格上的数据添加单击事件---结束
     //=================================================================================================
+    //====================================================================================================
+
+    //单击用户名显示用户详细信息
+    $("#name").click(function () {
+        alert("test");
+    });
     loadUserInfo();
 });
 
@@ -94,14 +112,17 @@ function showImg(index) {
 
 //加载用户信息函数
 function loadUserInfo() {
-    
+
     $.ajax({
         type: "post",
         url: "../Ajax/GetInfoHandler.ashx",
         success: function (result) {
             var loginName = result;
-            $("#tbname").value = loginName;
             $("#name").title = loginName;
+            document.getElementById("name").innerText = loginName;
         }
     })
 }
+
+
+
