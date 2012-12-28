@@ -12,21 +12,63 @@
     //=================================================================================================
 
     //加载表格数据---开始
+    //var oTable = $('#example').dataTable({
+    //    "bProcessing": true,
+    //    //"sAjaxSource": '../Scripts/arrays.txt',
+    //    "bServerSide": true,
+    //    'bPaginate': true,
+    //    "sPaginationType": 'full_numbers',
+    //    "sAjaxSource": "../Common/GetUsersInfo/AjaxHandler",
+    //    'bLengthChange': true,
+    //    "aoColumns": [
+    //                            { "sTitle": "姓名", "sClass": "center" },
+    //                            { "sTitle": "生日", "sClass": "center" },
+    //                            { "sTitle": "性别", "sClass": "center" },
+    //                            { "sTitle": "毕业学校", "sClass": "center" },
+    //                            { "sTitle": "职业", "sClass": "center" },
+    //                            { "sTitle": "手机号码", "sClass": "center" },
+    //                            { "sTitle": "QQ", "sClass": "center" },
+    //                            { "sTitle": "Msn", "sClass": "center" },
+    //                            { "sTitle": "微博", "sClass": "center" },
+    //                            { "sTitle": "英文名", "sClass": "center" },
+    //                            {
+    //                                "sTitle": "操作",
+    //                                "sClass": "center",
+    //                                "fnRender": function (obj) {
+    //                                    return '<a href=\"Details/' + obj.aData[0] + '\">查看详情</a>  <input tag=\"' + obj.aData[0] + '\" type=\"checkbox\" name=\"name\" />';
+    //                                }
+    //                            }
+    //    ]
     var oTable = $('#example').dataTable({
-        "bProcessing": true,
-        //"sAjaxSource": '../Scripts/arrays.txt',
-        "bServerSide": true,
-        "sPaginationType": 'full_numbers',
-        "sAjaxSource": '../Scripts/arrays.txt',
-        "fnServerData": function (fnCallback, oSettings) {
-            oSettings.jqXHR = $.ajax({
-                "url": "../Ajax/GetInfoHandler.ashx",
-                //"data": aoData,
-                "success": fnCallback,
-                "dataType": "jsonp",
-                "cache": false
-            });
-        }
+            "bServerSide": true,
+            "sAjaxSource": "../Common/GetUsersInfo.AjaxHandler",      //mvc后台ajax调用接口。
+            'bPaginate': true,                      //是否分页。
+            "bProcessing": true,                    //当datatable获取数据时候是否显示正在处理提示信息。
+            'bFilter': false,                       //是否使用内置的过滤功能。
+            'bLengthChange': true,                  //是否允许用户自定义每页显示条数。
+            'sPaginationType': 'full_numbers',      //分页样式
+            "aoColumns": [
+                    { "sName": "ID",
+                        "bSearchable": false,
+                        "bSortable": false,
+                        "fnRender": function (oObj) {
+                            return '<a href=\"Details/' + oObj.aData[0] + '\">View</a>';
+                        }                           //自定义列的样式
+                    },
+                    { "sName": "COMPANY_NAME" },
+                    { "sName": "ADDRESS" },
+                    { "sName": "TOWN" }
+            ]
+
+        //"fnServerData": function (fnCallback, oSettings) {
+        //    oSettings.jqXHR = $.ajax({
+        //        "url": "../Ajax/GetInfoHandler.ashx",
+        //        //"data": aoData,
+        //        "success": fnCallback,
+        //        "dataType": "jsonp",
+        //        "cache": false
+        //    });
+        //}
     });
     //加载表格数据---结束
     //=================================================================================================
