@@ -41,7 +41,7 @@
     //    ]
     var oTable = $('#example').dataTable({
             "bServerSide": true,
-            "sAjaxSource": "../Common/GetUsersInfo.AjaxHandler",      //mvc后台ajax调用接口。
+            "sAjaxSource": "../Common/GetUsersInfo.cs/AjaxHandler",      //mvc后台ajax调用接口。
             'bPaginate': true,                      //是否分页。
             "bProcessing": true,                    //当datatable获取数据时候是否显示正在处理提示信息。
             'bFilter': false,                       //是否使用内置的过滤功能。
@@ -59,7 +59,7 @@
                     { "sName": "ADDRESS" },
                     { "sName": "TOWN" }
             ]
-
+    
         //"fnServerData": function (fnCallback, oSettings) {
         //    oSettings.jqXHR = $.ajax({
         //        "url": "../Ajax/GetInfoHandler.ashx",
@@ -124,6 +124,7 @@
         alert("test");
     });
     loadUserInfo();
+    loadUserMsg();
 });
 
 //=================================================================================================
@@ -162,6 +163,18 @@ function loadUserInfo() {
             var loginName = result;
             $("#name").title = loginName;
             document.getElementById("name").innerText = loginName;
+        }
+    })
+}
+
+function loadUserMsg() {
+    $.ajax({
+        type: "POST",
+        url: "../Ajax/GetInfoHandler.ashx",
+        //data:"{}",
+        //dataType:"json",
+        success: function(res){
+            
         }
     })
 }
