@@ -131,9 +131,13 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Sources\bg.gif" />
+    <Content Include="Sources\bg_head.jpg" />
+    <Content Include="Sources\bg_tile.jpg" />
+    <Content Include="Sources\bg_vert.jpg" />
     <Content Include="Sources\button-submit.gif" />
     <Content Include="Sources\Error.png" />
     <Content Include="Sources\header1.jpg" />
+    <Content Include="Sources\home.png" />
     <Content Include="Sources\Information.png" />
     <Content Include="Sources\page.gif" />
     <Content Include="Sources\Success.png" />

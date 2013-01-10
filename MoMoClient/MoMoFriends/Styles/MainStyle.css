@@ -1,78 +1,173 @@
 ﻿/*基础样式*/
-* { margin:0; padding:0; word-wrap:break-word; word-break:break-all; }
-body
+*
+{
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/*body
 {
     height: 100%;
-	background-color: #333333;
-	background-image: url(../Sources/bg.gif);
-	background-position: 0% 0;
-	color: #000000;
-	line-height: 1.5;
-	font-family: Arial, Helvetica, sans-serif;
-	/*font-size: 62.5%;*/
-	/*text-align: center;*/
-	overflow: auto;
-    font: 12px/1.6em Helvetica, Arial, sans-serif;
+    background-color: #333333;
+    background-image: url(../Sources/bg.gif);
+    background-position: 0% 0;
+    color: #000000;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    /*overflow: auto;*/
+/*font: 12px/1.6em Helvetica, Arial, sans-serif;*/
+/*}*/
+
+body
+{
+    background: url('../Sources/bg_head.jpg') repeat-x top center, url('../Sources/bg_vert.jpg') repeat-x;
+    min-height: 500px;
+    font: 14px/1.3 'Segoe UI',Arial, sans-serif;
+    color: #888;
+    padding: 10px;
 }
-a { color:#0287CA; text-decoration:none; }
-a:hover { text-decoration:underline; }
-ul, li { list-style:none; }
-img { border:none; }
-h1, h2, h3, h4, h5, h6 { font-size:1em; }
-html { overflow:-moz-scrollbars-vertical; } /* 在Firefox下始终显示滚动条*/
+
+a
+{
+    color: #0287CA;
+    text-decoration: none;
+}
+
+    a:hover
+    {
+        text-decoration: underline;
+    }
+
+ul, li
+{
+    list-style: none;
+}
+
+img
+{
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1em;
+}
+
+html
+{
+    background: url('../Sources/bg_tile.jpg') #333d43;
+    overflow: -moz-scrollbars-vertical;
+}
+/* 在Firefox下始终显示滚动条*/
+
 /*基础样式*/
 
 /*头部样式*/
 /*头部样式开始*/
-#header{
-	width:800px; 
-	height:80px; 
-	border: 1px solid #AAAAAA;
-	margin:10px auto; 
-	background:#3B5998;
+#header
+{
+    width: 800px;
+    height: 80px;
+    border: 1px solid #AAAAAA;
+    margin: 10px auto;
+    background: #3B5998;
 }
 /*logo样式开始*/
-#logo { 
-	float:left; 
-	margin:0 0 0 10px; 
-	color:#FFF; 
-	font-size:3em; 
-	font-weight:700;
-	line-height:80px;
+#logo
+{
+    float: left;
+    margin: 0 0 0 10px;
+    color: #FFF;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 80px;
 }
 /*切换皮肤样式*/
-#skin { 
-	float:right; 
-	margin:10px; 
-	padding:4px; 
-	width:120px; 
-	list-style:none; 
-	border: 1px solid #CCCCCC; 
-	background:#FFF;
+#skin
+{
+    float: right;
+    margin: 10px;
+    padding: 4px;
+    width: 120px;
+    list-style: none;
+    border: 1px solid #CCCCCC;
+    background: #FFF;
 }
-#skin li { 
-	float:left; 
-	margin-right:4px; 
-	width:15px; 
-	height:15px; 
-	text-indent:-9999px; 
-	overflow:hidden; 
-	display:block; 
-	cursor:pointer; 
-	background-image:url(../images/theme.gif); 
+
+    #skin li
+    {
+        float: left;
+        margin-right: 4px;
+        width: 15px;
+        height: 15px;
+        text-indent: -9999px;
+        overflow: hidden;
+        display: block;
+        cursor: pointer;
+        background-image: url(../images/theme.gif);
+    }
+
+#skin_0
+{
+    background-position: 0px 0px;
 }
-#skin_0 { background-position:0px 0px; }
-#skin_1 { background-position:15px 0px; }
-#skin_2 { background-position:35px 0px; }
-#skin_3 { background-position:55px 0px; }
-#skin_4 { background-position:75px 0px; }
-#skin_5 { background-position:95px 0px; }
-#skin_0.selected { background-position:0px 15px; }
-#skin_1.selected { background-position:15px 15px; }
-#skin_2.selected { background-position:35px 15px; }
-#skin_3.selected { background-position:55px 15px; }
-#skin_4.selected { background-position:75px 15px; }
-#skin_5.selected { background-position:95px 15px; }
+
+#skin_1
+{
+    background-position: 15px 0px;
+}
+
+#skin_2
+{
+    background-position: 35px 0px;
+}
+
+#skin_3
+{
+    background-position: 55px 0px;
+}
+
+#skin_4
+{
+    background-position: 75px 0px;
+}
+
+#skin_5
+{
+    background-position: 95px 0px;
+}
+
+#skin_0.selected
+{
+    background-position: 0px 15px;
+}
+
+#skin_1.selected
+{
+    background-position: 15px 15px;
+}
+
+#skin_2.selected
+{
+    background-position: 35px 15px;
+}
+
+#skin_3.selected
+{
+    background-position: 55px 15px;
+}
+
+#skin_4.selected
+{
+    background-position: 75px 15px;
+}
+
+#skin_5.selected
+{
+    background-position: 95px 15px;
+}
 /*头部样式*/
 
 /*内容样式*/
@@ -87,9 +182,9 @@ html { overflow:-moz-scrollbars-vertical; } /* 在Firefox下始终显示滚动�
 
 #address
 {
-    display:block;
-	padding:0 8px; 
-	font-weight:700;
+    display: block;
+    padding: 0 8px;
+    font-weight: 700;
 }
 /*导航样式开始*/
 #navigation
@@ -97,10 +192,10 @@ html { overflow:-moz-scrollbars-vertical; } /* 在Firefox下始终显示滚动�
     width: 784px;
     padding: 8px;
     margin: 8px auto;
-    background: #3B5998;
-    height: 18px;
+    background: #3B5998; /*height: 18px;*/
+    height: auto;
 }
-#navigation ul li { 
+/*#navigation ul li { 
 	float:left; 
 	margin-right:14px;
 	position: relative ;
@@ -133,7 +228,7 @@ html { overflow:-moz-scrollbars-vertical; } /* 在Firefox下始终显示滚动�
 	border-bottom: 1px solid #BBB;
 	text-align: left;
 	width: 100%;
-}
+}*/
 /*导航样式结束*/
 
 /*底部样式*/
@@ -145,5 +240,5 @@ html { overflow:-moz-scrollbars-vertical; } /* 在Firefox下始终显示滚动�
     position: relative;
     margin-top: -150px; /* footer高度的负值 */
     height: 25px;
-    clear:both;
+    clear: both;
 }
