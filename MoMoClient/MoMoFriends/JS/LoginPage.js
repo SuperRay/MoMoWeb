@@ -29,7 +29,7 @@
                 data: "username=" + escape($('#username').val()) + "&password=" + escape($('#password').val()),
                 beforeSend: function () {
                     //$("#loading").css("display", "block"); //点击登录后显示loading，隐藏输入框
-                    $("li.Login").css("display", "none");
+                    $("#loginTips").val("正在登陆...");
                 },
                 success: function (msg) {
                     //$("#loading").hide(); //隐藏loading

@@ -16,6 +16,11 @@ namespace MoMoLib
             dbCon = new DBCBase("strConnection");
         }
 
+        /// <summary>
+        /// 用户登陆
+        /// </summary>
+        /// <param name="user">用户信息，用户名与密码</param>
+        /// <returns></returns>
         public string UserLogin(UserInfo user)
         {
             string ret; //函数返回值，记录数据库返回的密码
@@ -51,6 +56,11 @@ namespace MoMoLib
             return ret;
         }
 
+        /// <summary>
+        /// 用户账号注册
+        /// </summary>
+        /// <param name="user">用户注册信息</param>
+        /// <returns></returns>
         public string UserRegist(UserInfo user)
         {
             string ret = "fail";
@@ -74,6 +84,11 @@ namespace MoMoLib
             return ret;
         }
 
+        /// <summary>
+        /// 更新用户信息
+        /// </summary>
+        /// <param name="strUserInfo">用户信息</param>
+        /// <returns></returns>
         public bool UpdateUserInfo(UserInfo strUserInfo)
         {
             try
@@ -123,6 +138,11 @@ namespace MoMoLib
             }
         }
 
+        /// <summary>
+        /// 获取用户的详细信息
+        /// </summary>
+        /// <param name="loginName">登陆名</param>
+        /// <returns></returns>
         public UserInfo GetUserInfo(string loginName)
         {
             UserInfo myUserInfo = null;

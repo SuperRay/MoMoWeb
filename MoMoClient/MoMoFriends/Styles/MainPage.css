@@ -3,7 +3,7 @@
     border-style: double;
     border-width: thin;
     margin: 10px auto;
-    width: 800px;
+    width: 1000px;
     padding-bottom: 150px;
 }
 /*左侧样式*/
@@ -42,7 +42,7 @@
 .content_right{
 	background:#eee;
 	border : 1px solid #AAAAAA;
-	width: 586px;
+	width: 786px;
 	float:left;
 }
 /**最新动态 样式*/
@@ -66,7 +66,7 @@
 /*滚动广告样式*/
 .content_right .ad { 
 	margin-bottom:10px;
-	width:586px; 
+	width:786px; 
 	height:150px; 
 	overflow:hidden;
 	position:relative;
@@ -79,7 +79,7 @@
 	display:inline;
 }
 .content_right .slider img{ 
-	width:586px; 
+	width:786px; 
 	height:150px;
 	display:block;
 }
@@ -121,7 +121,7 @@ nav
 {
     display: block;
     margin: auto auto 0 0px;
-    width: 600px;
+    width: 800px;
 }
 
 .fancyNav

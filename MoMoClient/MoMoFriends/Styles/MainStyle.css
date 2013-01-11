@@ -68,7 +68,7 @@ html
 /*头部样式开始*/
 #header
 {
-    width: 800px;
+    width: 1000px;
     height: 80px;
     border: 1px solid #AAAAAA;
     margin: 10px auto;
@@ -176,7 +176,7 @@ html
     /*border-style: double;
     border-width: thin;*/
     margin: 10px auto;
-    width: 800px;
+    width: 1000px;
     padding-bottom: 150px;
 }
 
@@ -189,7 +189,7 @@ html
 /*导航样式开始*/
 #navigation
 {
-    width: 784px;
+    width: 984px;
     padding: 8px;
     margin: 8px auto;
     background: #3B5998; /*height: 18px;*/
@@ -234,7 +234,7 @@ html
 /*底部样式*/
 #bottom
 {
-    width: 800px;
+    width: 1000px;
     background: #3B5998;
     margin: 10px auto;
     position: relative;
