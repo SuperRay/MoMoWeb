@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/menu.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/slider.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/css_slider1/default.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Styles/css_slider1/nivo-slider.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="../Styles/hover.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/columns.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/hover_image.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/lightbox.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/widgets.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/light.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/stimenu.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/responsive.css" />
+
+    <script type="text/javascript" src="../Scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
+    <!-- JQUERY_UI -->
+    <script type="text/javascript" src="../Scripts/jquery.ui.core.js"></script>
+
+    <!--[if IE 8]>
+    <link href="css/style_IE.css" rel="stylesheet" type="text/css">
+    <![endif]-->
+    <script type="text/javascript" src="../JS/ie.html5.js"></script>
+    <!-- SLIDER -->
+    <script type="text/javascript" src="../Scripts/jquery.cycle.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#scroller .items").cycle({
+                fx: 'scrollUp'
+            });
+        });
+    </script>
+    <!-- SLIDER_TIMELINE -->
+    <script type="text/javascript" src="../Scripts/jquery.timeline.min.js"></script>
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            // dark
+            $('.timelineLight').timeline({
+                openTriggerClass: '.read_more',
+                startItem: '15/08/2012'
+            });
+        });
+    </script>
+    <!-- IMAGE -->
+    <script src="../JS/image.js" type="text/javascript"> </script>
+    <script src="../JS/lightbox.js" type="text/javascript"></script>
+    <script src="../JS/jquery.capSlide.js" type="text/javascript"></script>
+    <!-- MENU -->
+    <script type="text/javascript" src="../JS/menu.js"></script>
+</head>
+<body>
+    <!-- BEGIN menu -->
+    <header class="header_silverbackground">
+        <div class="menu">
+            <!-- BEGIN logo -->
+            <a class="logo" href="index.html">
+                <img src="../images/MoMoLogo.png" alt="logo" /></a>
+            <!-- /END logo -->
+
+            <div class="blockeasing-wrapp">
+                <h6 class="blockeasing-header">Menu</h6>
+                <ul class="blockeasing">
+                    <li><a href="index.html">HOME</a>
+                        <ul>
+                            <li><a href="index.html">SLIDE 1</a>
+                                <ul>
+                                    <li><a href="index_layout_v1.html">HOME LAYOUT V1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index1.html">SLIDE 2</a>
+                                <ul>
+                                    <li><a href="index1_layout_v1.html">HOME LAYOUT V1</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index2.html">SLIDE 3</a>
+                                <ul>
+                                    <li><a href="index2_layout_v1.html">HOME LAYOUT V1</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="our-team.html">OUR TEAM</a></li>
+                    <li class="current"><a href="blog.html">BLOG</a>
+                        <ul>
+                            <li><a href="blog_post.html">POST EXAMPLE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">SERVICES</a>
+                        <ul>
+                            <li><a href="services_page.html">SERVICES PAGE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="#">FEATURES</a>
+                        <ul>
+                            <li><a href="icons.html">ICONS</a></li>
+                            <li><a href="elements.html">ELEMENTS</a></li>
+                            <li><a href="columns.html">COLUMNS</a></li>
+                            <li><a href="typography.html">TYPOGRAPHY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+    <!-- /END menu -->
+    <!-- BEGIN TIMELINE -->
+    <div class="timelineLight tl">
+        <div class="item" data-id="04/06/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/1a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/1.jpg" alt="" />
+            </a>
+            <h2>JUNE, 4</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="04/06/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="04/06/2012">
+            <img class="con_borderImage" src="../images/timeline_content/1w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="12/06/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/2a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/2.jpg" alt="" />
+            </a>
+            <h2>JUNE, 12</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="12/06/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="12/06/2012">
+            <img class="con_borderImage" src="../images/timeline_content/2w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="21/06/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/3a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/3.jpg" alt="" />
+            </a>
+            <h2>JUNE, 21</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="21/06/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="21/06/2012">
+            <img class="con_borderImage" src="../images/timeline_content/3w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+
+        <div class="item" data-id="27/06/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/4a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/4.jpg" alt="" />
+            </a>
+            <h2>JUNE, 27</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="27/06/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="27/06/2012">
+            <img class="con_borderImage" src="../images/timeline_content/4w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+
+        <div class="item" data-id="03/07/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/5a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/5.jpg" alt="" />
+            </a>
+            <h2>JULY, 3</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="03/07/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="03/07/2012">
+            <img class="con_borderImage" src="../images/timeline_content/5w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+
+
+        <div class="item" data-id="13/07/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/6a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/6.jpg" alt="" />
+            </a>
+            <h2>JULY, 13</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="13/07/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="13/07/2012">
+            <img class="con_borderImage" src="../images/timeline_content/6w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="17/07/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/7a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/7.jpg" alt="" />
+            </a>
+            <h2>JULY, 17</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="17/07/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="17/07/2012">
+            <img class="con_borderImage" src="../images/timeline_content/7w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="25/07/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/8a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/8.jpg" alt="" />
+            </a>
+            <h2>JULY, 25</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="25/07/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="25/07/2012">
+            <img class="con_borderImage" src="../images/timeline_content/8w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="06/08/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/9a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/9.jpg" alt="" />
+            </a>
+            <h2>AUGUST, 6</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="06/08/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="06/08/2012">
+            <img class="con_borderImage" src="../images/timeline_content/9w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="15/08/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/10a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/10.jpg" alt="" />
+            </a>
+            <h2>AUGUST, 15</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="15/08/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="15/08/2012">
+            <img class="con_borderImage" src="../images/timeline_content/10w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="20/08/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/11a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/11.jpg" alt="" />
+            </a>
+            <h2>AUGUST, 20</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="20/08/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="20/08/2012">
+            <img class="con_borderImage" src="../images/timeline_content/11w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <div class="item" data-id="26/08/2012" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit...">
+            <a class="image_rollover_bottom con_borderImage" data-description="ZOOM IN" href="../Sources/GroupPics/12a.jpg" rel="lightbox[timeline]">
+                <img src="../Sources/GroupPics/12.jpg" alt="" />
+            </a>
+            <h2>AUGUST, 26</h2>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc...</span>
+            <div class="read_more" data-id="26/08/2012">Read more</div>
+        </div>
+        <div class="item_open" data-id="26/08/2012">
+            <img class="con_borderImage" src="../images/timeline_content/12w.jpg" />
+            <div class="timeline_open_content">
+                <h2 class="no-marg-top">LOREM IPSUM DOLOR</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />
+                <br />
+
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+    </div>
+    <!-- /END TIMELINE -->
+</body>
+</html>
