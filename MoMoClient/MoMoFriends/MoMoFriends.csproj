@@ -99,6 +99,9 @@
     <Content Include="images\img_3.jpg" />
     <Content Include="images\img_4.jpg" />
     <Content Include="images\left.gif" />
+    <Content Include="images\lightbox\close.png" />
+    <Content Include="images\lightbox\next.png" />
+    <Content Include="images\lightbox\prev.png" />
     <Content Include="images\line.png" />
     <Content Include="images\line1.png" />
     <Content Include="images\loadingAnimation.gif" />
