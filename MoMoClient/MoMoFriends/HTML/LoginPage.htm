@@ -5,6 +5,7 @@
     <title>用户登录页面</title>
     <!--<link media="screen" href="../Styles/PageMainStyle.css" rel="Stylesheet" type="text/css" />-->
     <script type="text/javascript" src="../Scripts/jquery-1.3.1.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.validate.js"></script>
     <script type="text/javascript" src="../Scripts/jquery.cookie.js"></script>
     <script type="text/javascript" src="../JS/LoginPage.js"></script>
 
@@ -12,8 +13,11 @@
         #navigation
         {
             margin-top: 50px;
-            width:400px;
-            margin-left:10em;
+            width: 400px;
+            /*使元素居中*/
+            margin-left: auto;
+            margin-right: auto;
+            /*使元素居中*/
         }
 
         #content
@@ -35,10 +39,40 @@
             line-height: 1.5;
             font-family: Arial, Helvetica, sans-serif;
             overflow: auto;
+            text-align: center; /*IE中使元素居中必加属性*/
         }
+
         .Login
         {
-            background-color:white;
+            background-color: white;
+        }
+
+        .login_input
+        {
+            font-weight: bold;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+
+        #btnLogin
+        {
+            background-image: url(images/login/login_18.gif);
+            BORDER-bottom: medium none;
+            BORDER-left: medium none;
+            BORDER-right: medium none;
+            BORDER-TOP: medium none;
+            width: 86px;
+            height: 32px;
+            background-color: black;
+            color: white;
+            font-weight: 800;
+        }
+
+        /*提示信息样式*/
+        label.error
+        {
+            background: url(../Sources/Error.png) no-repeat 0px 0px;
+            color: Red;
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -49,43 +83,43 @@
     <div id="navigation">
         <ul>
             <li class="Login">
-                <!--                <form name="login" method="post" action="" onsubmit="return loginCheck(this);">-->
                 <table class="style1" width="100%">
                     <tr>
-                        <td class="style4" width="30%" style="border:none;">
+                        <td class="style4" width="30%" style="border: none;">
                             <img alt="" src="../images/MoMoLogo.png" style="width: auto; height: 60px" /></td>
-                        <td style="color:white; border:none;">欢迎登陆网站</td>
+                        <td style="color: white; border: none;">欢迎登陆网站</td>
                     </tr>
                 </table>
-                <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <td class="color01" width="60" align="right" height="40px">帐号</td>
-                        <td>&nbsp;&nbsp;<input class="login_name_input" type="text" name="tbUserName" id="username"
-                            maxlength="50" style="font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="color01" width="60" align="right" height="40px">密码</td>
-                        <td>&nbsp;&nbsp;<input class="login_password_input" type="password" name="tbPassword"
-                            maxlength="50" style="font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif"
-                            id="password" /></td>
-                    </tr>
-                    <tr>
-                        <td height="40px"></td>
-                        <td>&nbsp;&nbsp;<input name="remuser" id="remuser" type="checkbox"
-                            value="1" align="middle" />&nbsp;<span class="color01">记住用户名</span></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td style="padding-left: 10px;">
-                            <input title="登录" value="登录" type="button" style="background-image: url(images/login/login_18.gif); BORDER-bottom: medium none; BORDER-left: medium none; BORDER-right: medium none; BORDER-TOP: medium none; width: 86px; height: 32px; background-color: Olive;"
-                                id="btnLogin" />
-                            <label id="loginTips" style="color: red; font-weight: 700"></label>
-                            <span><a href="RegistPage.html">用户注册</a></span>
-                            <span><a href="Mail.html">忘记密码？</a></span>
-                        </td>
-                    </tr>
-                </table>
+                <form id="loginInfoForm" class="loginForm" action="#" method="get">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="color01" width="60" align="right" height="40px">帐号</td>
+                            <td>&nbsp;&nbsp;<input class="login_input" type="text" name="tbUserName" id="username"
+                                maxlength="50" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="color01" width="60" align="right" height="40px">密码</td>
+                            <td>&nbsp;&nbsp;<input class="login_input" type="password" name="tbPassword"
+                                maxlength="20" id="password" /></td>
+                        </tr>
+                        <tr>
+                            <td height="40px"></td>
+                            <td>&nbsp;&nbsp;<input name="remuser" id="remuser" type="checkbox"
+                                value="1" align="middle" />&nbsp;<span class="color01">记住用户名</span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="padding-left: 10px; height: 42px;">
+                                <input title="登录" value="登录" type="submit"
+                                    id="btnLogin" />
+                                <label id="loginTips" style="color: red; font-weight: 700"></label>
+                                <span><a href="RegistPage.html">用户注册</a></span>
+                                <span><a href="Mail.html">忘记密码？</a></span>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </li>
         </ul>
     </div>
