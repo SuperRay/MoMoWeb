@@ -23,5 +23,7 @@ namespace MoMoLib
         [OperationContract]
         UserInfo GetUserInfo(string loginName);
 
+        [OperationContract]
+        string ListCodeQuestion();
     }
 }

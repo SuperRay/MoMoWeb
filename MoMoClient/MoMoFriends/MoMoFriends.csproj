@@ -190,6 +190,7 @@
     <Content Include="ptsans\pts55f-webfont.ttf" />
     <Content Include="ptsans\pts55f-webfont.woff" />
     <Content Include="ptsans\pts55f-webfont_162a16fe.eot" />
+    <Content Include="Ajax\ListCodeQ.ashx" />
     <None Include="Service References\HttpServiceReference\configuration91.svcinfo" />
     <None Include="Service References\HttpServiceReference\configuration.svcinfo" />
     <Content Include="Service References\HttpServiceReference\MoMoFriends.HttpServiceReference.UserInfo.datasource">
@@ -271,6 +272,9 @@
     </Compile>
     <Compile Include="Ajax\IDInfoHandler.ashx.cs">
       <DependentUpon>IDInfoHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax\ListCodeQ.ashx.cs">
+      <DependentUpon>ListCodeQ.ashx</DependentUpon>
     </Compile>
     <Compile Include="Ajax\LoginHandler.ashx.cs">
       <DependentUpon>LoginHandler.ashx</DependentUpon>

@@ -14,9 +14,12 @@
 
         div.btnSubmit input
         {
+            border-style: none;
+            border-color: inherit;
+            border-width: 0px;
             height: 36px;
             position: relative;
-            background-image: url(../Sources/button-submit.gif);
+            background-image: url('../Sources/button-submit.gif');
             background-repeat: no-repeat;
             background-position: right 0px;
             float: left;
@@ -24,9 +27,10 @@
             font-weight: bold;
             padding: 0px 15px 2px 15px;
             margin: 20px 0px 20px 0px;
-            border: 0px;
             cursor: pointer;
             z-index: 5;
+            top: 0px;
+            left: 0px;
         }
 
         .inputBox
@@ -54,6 +58,7 @@
             color: Red;
             padding-left: 20px;
         }
+
         .style1
         {
             background-color: black;
@@ -119,6 +124,25 @@
                                             <input type="text" class="inputBox" maxlength="100" name="email" />
                                         </div>
                                         <div class="secondLine">(激活码将发到你的邮箱中，只有激活帐户才能使用！)</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>密码验证问题：</td>
+                                    <td>
+                                        <div class="firstLine">
+                                            <select class="inputBox" name="questions" id="tbCodeQ">
+                                            </select>
+                                        </div>
+                                        <div class="secondLine">(密码验证问题有助于在你忘记密码时帮你找回密码)</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>问题答案：</td>
+                                    <td>
+                                        <div class="firstLine">
+                                            <input type="text" class="inputBox" name="answer" id="codeAnswer" />
+                                        </div>
+                                        <div class="secondLine">(问题答案要牢记，这是你取回密码的唯一凭证)</div>
                                     </td>
                                 </tr>
                                 <tr>

@@ -361,6 +361,9 @@ namespace MoMoFriends.HttpServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/GetUserInfo", ReplyAction="http://tempuri.org/IUserOperate/GetUserInfoResponse")]
         MoMoFriends.HttpServiceReference.UserInfo GetUserInfo(string loginName);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IUserOperate/ListCodeQuestion", ReplyAction="http://tempuri.org/IUserOperate/ListCodeQuestionResponse")]
+        string ListCodeQuestion();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -404,6 +407,10 @@ namespace MoMoFriends.HttpServiceReference {
         
         public MoMoFriends.HttpServiceReference.UserInfo GetUserInfo(string loginName) {
             return base.Channel.GetUserInfo(loginName);
+        }
+        
+        public string ListCodeQuestion() {
+            return base.Channel.ListCodeQuestion();
         }
     }
 }

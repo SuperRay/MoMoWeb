@@ -1,4 +1,5 @@
 ﻿$(function () {
+    ListQuestions();
     ///表单验证规则
     $("#regInfoForm").validate({
         onsubmit: true,//表单提交时验证
@@ -23,6 +24,14 @@
             email: {
                 required: true,
                 email: true
+            },
+            questions: {
+                required: true
+            },
+            answer: {
+                required: true,
+                minlength: 2,
+                maxlength: 50
             }
         },
         //当输入信息不符合规则时的信息提示定义
@@ -43,12 +52,22 @@
             email: {
                 required: "请输入Email地址",
                 email: "请输入正确的email地址"
+            },
+            questions: {
+                required:"请选择密码问题",
+            },
+            answer: {
+                required: "请输入密码问题答案",
+                minlength: "确认密码不能小于2个字符",
+                maxlength: "答案不能超过50个字符"
             }
         },
         
         submitHandler: function (form) {
             var strUserName = encodeURI($("#regName").val());
             var strPassword = encodeURI($("#pass1").val());
+            var queID = encodeURI($("#tbCodeQ").options[$("#tbCodeQ").selectedIndex].value);
+            var ans = encodeURI($("#codeAnswer").val());
             $.ajax({
                 url: "../Ajax/RegistHandler.ashx",
                 type: "post",                
@@ -74,4 +93,25 @@
             return false;
         }
     });
+    
 })
+
+//=====================================================================================================
+///列出所有密码问题方法
+function ListQuestions() {
+    $.ajax({
+        url: "../Ajax/ListCodeQ.ashx",
+        type: "post",
+        datatype: "json",
+        success: function (codeQue) {
+            var obj = eval("(" + codeQue + ")");       //js读取json方法，其中codeQue必须用在（）内才能被eval方法调用
+            var codeQ = obj.Questions;
+            var trs = "<option value=''>请选择</option>";
+            $.each(codeQ, function (i, n) {
+                trs += "<option value=" + n.QuestionID + ">" + n.Question + "</option>";
+            });
+            $("#tbCodeQ").empty();
+            $("#tbCodeQ").append(trs);
+        }
+    })
+}

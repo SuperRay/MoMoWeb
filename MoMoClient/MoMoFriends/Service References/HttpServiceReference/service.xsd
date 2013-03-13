@@ -57,4 +57,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ListCodeQuestion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListCodeQuestionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListCodeQuestionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

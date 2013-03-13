@@ -181,5 +181,12 @@ namespace MoMoLib
                 userData.Close();
             }
         }
+
+        public string ListCodeQuestion()
+        {
+            DataTable dtQuestion = dbCon.RunProcedure("UserDAL_ListCodeQuestion", null, "Questions").Tables[0];
+            string json = Common.JsonFunction.DatatableToJson(dtQuestion);
+            return json;
+        }
     }
 }
