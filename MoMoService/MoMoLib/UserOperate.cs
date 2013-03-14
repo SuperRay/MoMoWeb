@@ -66,16 +66,22 @@ namespace MoMoLib
             string ret = "fail";
             try
             {
-                SqlParameter[] sqlPara = new SqlParameter[3];
+                SqlParameter[] sqlPara = new SqlParameter[6];
                 sqlPara[0] = new SqlParameter("@userName", SqlDbType.VarChar, 50);
                 sqlPara[0].Value = user.LoginName;
                 sqlPara[1] = new SqlParameter("@password", SqlDbType.VarChar, 50);
                 sqlPara[1].Value = user.Password;
-                sqlPara[2] = new SqlParameter("@strReturn", SqlDbType.VarChar, 50);
-                sqlPara[2].Direction = System.Data.ParameterDirection.Output;
+                sqlPara[2] = new SqlParameter("@email", SqlDbType.VarChar, 50);
+                sqlPara[2].Value = user.Mail;
+                sqlPara[3] = new SqlParameter("@questionID", SqlDbType.Int);
+                sqlPara[3].Value = user.QuestionID;
+                sqlPara[4] = new SqlParameter("@answer", SqlDbType.VarChar, 20);
+                sqlPara[4].Value = user.QuestionAnswer;
+                sqlPara[5] = new SqlParameter("@strReturn", SqlDbType.VarChar, 50);
+                sqlPara[5].Direction = System.Data.ParameterDirection.Output;
                 int rowCount = 0;
                 dbCon.RunProcedure("UserDAL_Regist", sqlPara, out rowCount);
-                ret = Convert.ToString(sqlPara[2].Value);
+                ret = Convert.ToString(sqlPara[5].Value);
             }
             catch (Exception ex)
             {

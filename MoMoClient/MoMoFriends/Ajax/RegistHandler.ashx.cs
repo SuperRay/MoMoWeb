@@ -23,6 +23,9 @@ namespace MaoMaoFriendsWeb.Ajax
                 
                 user.LoginName = System.Web.HttpUtility.UrlDecode(context.Request["username"]);
                 user.Password = CommonFunction.StringToMD5(System.Web.HttpUtility.UrlDecode(context.Request["password"]), 16);
+                user.Mail = System.Web.HttpUtility.UrlDecode(context.Request["email"]);
+                user.QuestionID = Convert.ToInt32(System.Web.HttpUtility.UrlDecode(context.Request["question"]));
+                user.QuestionAnswer = System.Web.HttpUtility.UrlDecode(context.Request["answer"]);
                 try
                 {
                     if (insUserBLL.UserRegist(user) == "注册成功")

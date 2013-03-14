@@ -121,7 +121,7 @@
                                     </td>
                                     <td>
                                         <div class="firstLine">
-                                            <input type="text" class="inputBox" maxlength="100" name="email" />
+                                            <input type="text" class="inputBox" maxlength="100" name="email" id="tbEmail"/>
                                         </div>
                                         <div class="secondLine">(激活码将发到你的邮箱中，只有激活帐户才能使用！)</div>
                                     </td>
@@ -130,7 +130,7 @@
                                     <td class="right" valign="top" width="150"><span style="color: #FF0000">*</span>密码验证问题：</td>
                                     <td>
                                         <div class="firstLine">
-                                            <select class="inputBox" name="questions" id="tbCodeQ">
+                                            <select class="inputBox" name="questions" id="tbCodeQ" onchange="fnChangeQ()">
                                             </select>
                                         </div>
                                         <div class="secondLine">(密码验证问题有助于在你忘记密码时帮你找回密码)</div>

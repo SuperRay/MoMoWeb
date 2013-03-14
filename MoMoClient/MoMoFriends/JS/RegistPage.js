@@ -66,14 +66,18 @@
         submitHandler: function (form) {
             var strUserName = encodeURI($("#regName").val());
             var strPassword = encodeURI($("#pass1").val());
-            var queID = encodeURI($("#tbCodeQ").options[$("#tbCodeQ").selectedIndex].value);
+            var strEmail = encodeURI($("#tbEmail").val());
+            var queID = encodeURI($("#tbCodeQ").find("option:selected").val());
             var ans = encodeURI($("#codeAnswer").val());
             $.ajax({
                 url: "../Ajax/RegistHandler.ashx",
                 type: "post",                
                 data: {
                     username: strUserName,
-                    password: strPassword
+                    password: strPassword,
+                    email: strEmail,
+                    question: queID,
+                    answer: ans
                 },
                 success: function (result) {
                     if (result == "success") {
@@ -114,4 +118,10 @@ function ListQuestions() {
             $("#tbCodeQ").append(trs);
         }
     })
+}
+
+//===========================================================================================================
+//==========选中密码问题时响应事件===========================================================================
+function fnChangeQ() {
+    var str = $("#tbCodeQ").find("option:selected").val();
 }
