@@ -71,6 +71,7 @@
     </Content>
     <Content Include="HTML\LoginPage.htm" />
     <Content Include="HTML\MainPage.html" />
+    <Content Include="HTML\NewLogin.html" />
     <Content Include="HTML\NewMainPage.html" />
     <Content Include="HTML\RegistPage.html" />
     <Content Include="images\ads\1.gif" />
@@ -107,6 +108,9 @@
     <Content Include="images\loadingAnimation.gif" />
     <Content Include="images\look.gif" />
     <Content Include="images\MoMoLogo.png" />
+    <Content Include="images\newlogin\20121211_1.jpg" />
+    <Content Include="images\newlogin\Logo.png" />
+    <Content Include="images\newlogin\slogan.png" />
     <Content Include="images\path_left.png" />
     <Content Include="images\path_right.png" />
     <Content Include="images\right.gif" />

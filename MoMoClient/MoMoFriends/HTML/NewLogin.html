@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        #context
+        {
+            /*使背景图片自动适应屏幕大小*/
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: url(../images/newlogin/20121211_1.jpg);
+            background-position: center;
+            margin: auto;
+            /*使背景图片自动适应屏幕大小*/
+        }
+
+        .title_head
+        {
+            background-image: url(../images/newlogin/Logo.png);
+            background-repeat: no-repeat;
+            padding: 0;
+            background-position: center;
+            height: 142px;
+            width: 425px;
+            /*float:left;*/
+        }
+
+        .main_content_style
+        {
+            margin-top: 20px;
+            height: auto;
+            width: 100%;
+        }
+        .container
+        {
+            position:relative;
+            margin:auto;
+            width:900px;
+            height:235px;
+        }
+        .login_img
+        {
+            background-image: url(../images/newlogin/slogan.png);
+            background-repeat: no-repeat;
+            /*float:left;*/
+            height: 235px;
+            width: 450px;
+            margin: 0 0 0 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .title_style
+        {
+            width: 900px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .login_content
+        {
+            float: right;
+            margin: 0 0 0 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height:235px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="context" class="main_bk_style">
+        <div class="main_content_style">
+            <div class="title_style">
+                <div class="title_head">
+                </div>
+            </div>
+            <div class="container">
+                <div class="login_img">
+                </div>
+                <div class="login_content">
+                    <form id="loginform" name="loginform">
+                        <div class="form_item_error" style="display: none" id="err_m"></div>
+
+                        <div class="form_item_username">
+                            <label id="uhint" for="username" class="ui_placeholder">请输入登陆名</label>
+                            <input value="" id="username" name="username" tabindex="2" type="text" class="ui_textinput" />
+                        </div>
+                        <div class="form_item_password">
+                            <label id="phint" for="pwd" class="ui_placeholder">请输入密码</label>
+                            <input maxlength="20" type="password" id="pwd" name="pwd" tabindex="3" class="ui_textinput" value="" />
+                        </div>
+                        <div class="form_item_btn">
+                            <button class="ui_btn_login" type="submit" id="subbtn"><span class="ui_hide">登录</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
