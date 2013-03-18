@@ -109,6 +109,8 @@
     <Content Include="images\look.gif" />
     <Content Include="images\MoMoLogo.png" />
     <Content Include="images\newlogin\20121211_1.jpg" />
+    <Content Include="images\newlogin\loginbutton.png" />
+    <Content Include="images\newlogin\loginleft.png" />
     <Content Include="images\newlogin\Logo.png" />
     <Content Include="images\newlogin\slogan.png" />
     <Content Include="images\path_left.png" />
