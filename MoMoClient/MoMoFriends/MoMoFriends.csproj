@@ -161,6 +161,7 @@
     <Content Include="JS\LoginPage.js" />
     <Content Include="JS\MainPage.js" />
     <Content Include="JS\menu.js" />
+    <Content Include="JS\newLoginPage.js" />
     <Content Include="JS\RegistPage.js" />
     <Content Include="JS\services.js" />
     <Content Include="JS\swfobject.js" />
