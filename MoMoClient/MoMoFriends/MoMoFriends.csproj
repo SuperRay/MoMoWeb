@@ -257,6 +257,7 @@
     <Content Include="Styles\MainPage.css" />
     <Content Include="Styles\MainStyle.css" />
     <Content Include="Styles\menu.css" />
+    <Content Include="Styles\newstyle\NewLogin.css" />
     <Content Include="Styles\PageMainStyle.css" />
     <Content Include="Styles\pricingtable.css" />
     <Content Include="Styles\responsive.css" />

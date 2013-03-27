@@ -18,41 +18,53 @@
         //当输入信息不符合规则时的信息提示定义
         messages: {
             username: {
-                required: "请输入姓名",
+                required: "用户名不能为空",
                 minlength: jQuery.format("用户名无效"),
                 maxlength: jQuery.format("用户名无效")
             },
             pwd: {
-                required: "请输入密码"
+                required: "密码不能为空"
             }
         },
+
+        errorContainer: "#err_m",
+
+        errorLabelContainer: $("#err_m"),
+
+        wrapper: "string",
+
+        errorPlacement: function (error, element) {
+            $("#err_m").css("display", "none");
+            if (element.attr("name") == "username")
+            { error.appendTo("#err_m"); }
+            else if (element.attr("name") == "pwd") {
+                error.appendTo("#err_m");
+            }
+        } ,
 
         submitHandler: function (form) {
             $.ajax({
                 url: "../Ajax/LoginHandler.ashx",
                 type: "POST",
                 data: "username=" + escape($('#username').val()) + "&password=" + escape($('#pwd').val()),
-                beforeSend: function () {
-                    //$("#loading").css("display", "block"); //点击登录后显示loading，隐藏输入框
-                    $("#err_m").val("正在登陆...");
-
+                beforeSend: function () {                     
+                    $("#err_m").css("display", "none"); //点击登录后隐藏提示信息
+                    $("#context").css("cursor", "wait");
                 },
                 success: function (msg) {
-                    //$("#loading").hide(); //隐藏loading
-                    if (msg == "success") {
-                        $("#err_m").val("成功！");
-                        //parent.tb_remove();                     
+
+                    if (msg == "success") {                    
                         parent.document.location.href = "../HTML/MainPage.html"; //如果登录成功则跳到管理界面
-                        //parent.tb_remove();
                     }
                     if (msg == "fail") {
                         $("#err_m").css("display", "block");
-                        $("#err_m").val("用户名或密码错误！");
+                        $("#err_m").html('<label class="error">用户名或密码错误</label>');
+                        $("#context").css("cursor", "default");
                     }
                 },
                 complete: function (data) {
-                    //$("#loading").css("display", "none"); //点击登录后显示loading，隐藏输入框
-                    $("#login").css("display", "block");
+
+                   
                 },
                 error: function (XMLHttpRequest, textStatus, thrownError) {
                 }
@@ -60,6 +72,7 @@
         },
 
         invalidHandler: function (form, validator) {
+            $("#context").css("cursor", "default");
             return false;
         }
     });
