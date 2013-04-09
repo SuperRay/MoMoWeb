@@ -73,6 +73,7 @@
     <Content Include="HTML\MainPage.html" />
     <Content Include="HTML\NewLogin.html" />
     <Content Include="HTML\NewMainPage.html" />
+    <Content Include="HTML\NewRegist.html" />
     <Content Include="HTML\RegistPage.html" />
     <Content Include="images\ads\1.gif" />
     <Content Include="images\ads\2.gif" />
@@ -113,6 +114,13 @@
     <Content Include="images\newlogin\loginleft.png" />
     <Content Include="images\newlogin\Logo.png" />
     <Content Include="images\newlogin\slogan.png" />
+    <Content Include="images\newregist\body.png" />
+    <Content Include="images\newregist\close.png" />
+    <Content Include="images\newregist\error.png" />
+    <Content Include="images\newregist\ipt.png" />
+    <Content Include="images\newregist\left_2.png" />
+    <Content Include="images\newregist\pwd.png" />
+    <Content Include="images\newregist\right.png" />
     <Content Include="images\path_left.png" />
     <Content Include="images\path_right.png" />
     <Content Include="images\right.gif" />
@@ -155,6 +163,7 @@
     <Content Include="JS\IDCardPage.js" />
     <Content Include="JS\ie.html5.js" />
     <Content Include="JS\image.js" />
+    <Content Include="JS\InputTips_01.js" />
     <Content Include="JS\jquery.capSlide.js" />
     <Content Include="JS\lazyload.js" />
     <Content Include="JS\lightbox.js" />
